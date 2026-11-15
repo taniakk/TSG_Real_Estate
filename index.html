@@ -1,0 +1,1621 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSG Real Estate | Premium Residential & Commercial Properties</title>
+
+    <meta name="description" content="Discover premium residential and commercial properties with TSG Real Estate Consulting at Science Park, Ahmedabad. Your trusted property partner.">
+
+    <meta name="keywords" content="TSG Real Estate, Status Altezza, Altezza One, Ahmedabad Real Estate, Premium Properties Ahmedabad">
+
+    <meta name="theme-color" content="#0B0C10">
+
+    <meta property="og:title" content="TSG Real Estate | Premium Living">
+    <meta property="og:description" content="Discover premium homes and commercial spaces with TSG Real Estate Consulting.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0C10',
+                        charcoal: '#1F2833',
+                        burntOrange: '#C05020',
+                        orangeLight: '#D96C3A',
+                        metallic: '#D4AF37',
+                        goldLight: '#F3E5AB',
+                        cream: '#FDFBF7'
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: #C05020;
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0B0C10;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #C05020;
+            border-radius: 10px;
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(
+                135deg,
+                #F3E5AB,
+                #D4AF37,
+                #997A00
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-orange-gradient {
+            background: linear-gradient(
+                135deg,
+                #D96C3A,
+                #C05020
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-glass-dark {
+            background: rgba(11,12,16,0.88);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(212,175,55,0.15);
+        }
+
+        .premium-img-container {
+            overflow: hidden;
+            border-radius: 3px;
+        }
+
+        .premium-img {
+            transition: transform 1.2s cubic-bezier(.19,1,.22,1);
+        }
+
+        .premium-img-container:hover .premium-img {
+            transform: scale(1.06);
+        }
+
+        .hero-overlay {
+            background:
+                linear-gradient(90deg,
+                rgba(11,12,16,.96) 0%,
+                rgba(11,12,16,.78) 45%,
+                rgba(11,12,16,.25) 100%),
+                linear-gradient(0deg,
+                rgba(11,12,16,.7),
+                transparent 65%);
+        }
+
+        .gallery-card:hover .gallery-img {
+            transform: scale(1.08);
+        }
+
+        .gallery-img {
+            transition: transform 1s ease;
+        }
+
+        .gold-line {
+            width: 55px;
+            height: 2px;
+            background: #D4AF37;
+        }
+
+        .section-label {
+            color: #C05020;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .whatsapp-float {
+            animation: whatsappPulse 3s infinite;
+        }
+
+        @keyframes whatsappPulse {
+            0%,100% {
+                box-shadow: 0 0 0 0 rgba(37,211,102,.35);
+            }
+            50% {
+                box-shadow: 0 0 0 12px rgba(37,211,102,0);
+            }
+        }
+
+        .menu-line {
+            transition: .3s ease;
+        }
+
+        .menu-active .line-one {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .menu-active .line-two {
+            opacity: 0;
+        }
+
+        .menu-active .line-three {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media(max-width:767px) {
+            .hero-section {
+                min-height: 760px;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-cream text-charcoal antialiased">
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-glass-dark transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="h-20 md:h-24 flex items-center justify-between">
+
+            <!-- Logo -->
+
+            <a href="#" class="flex items-center gap-3">
+
+                <svg class="w-10 h-10 text-burntOrange" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 22h20L12 2zm0 4l6.5 12h-13L12 6z"/>
+                </svg>
+
+                <div>
+                    <h2 class="font-display font-bold text-2xl tracking-[.2em] text-white">
+                        TSG
+                    </h2>
+
+                    <p class="text-[9px] tracking-[.25em] uppercase text-gray-400">
+                        Real Estate Consulting
+                    </p>
+                </div>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <div class="hidden md:flex items-center gap-9 text-xs uppercase tracking-[.15em]">
+
+                <a href="#residential" class="text-gray-300 hover:text-metallic transition">
+                    Residences
+                </a>
+
+                <a href="#commercial" class="text-gray-300 hover:text-metallic transition">
+                    Commercial
+                </a>
+
+                <a href="#gallery" class="text-gray-300 hover:text-metallic transition">
+                    Gallery
+                </a>
+
+                <a href="#philosophy" class="text-gray-300 hover:text-metallic transition">
+                    About
+                </a>
+
+                <a href="#contact" class="text-gray-300 hover:text-metallic transition">
+                    Contact
+                </a>
+
+                <a href="tel:+919638604688"
+                   class="border border-metallic text-metallic px-5 py-3 hover:bg-metallic hover:text-obsidian transition duration-300">
+                    +91 96386 04688
+                </a>
+
+            </div>
+
+            <!-- Mobile Toggle -->
+
+            <button id="mobile-menu-btn"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    class="md:hidden text-metallic w-10 h-10 flex flex-col justify-center items-center gap-[5px]">
+
+                <span class="menu-line line-one w-6 h-[2px] bg-current"></span>
+                <span class="menu-line line-two w-6 h-[2px] bg-current"></span>
+                <span class="menu-line line-three w-6 h-[2px] bg-current"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-obsidian border-t border-metallic/20">
+
+        <div class="px-6 py-8 flex flex-col gap-6 text-sm uppercase tracking-widest text-gray-300">
+
+            <a href="#residential" class="mobile-link hover:text-metallic">Residences</a>
+            <a href="#commercial" class="mobile-link hover:text-metallic">Commercial</a>
+            <a href="#gallery" class="mobile-link hover:text-metallic">Gallery</a>
+            <a href="#philosophy" class="mobile-link hover:text-metallic">About Us</a>
+            <a href="#contact" class="mobile-link hover:text-metallic">Contact</a>
+
+            <a href="tel:+919638604688" class="text-metallic">
+                <i class="fa-solid fa-phone mr-2"></i>
+                Call Us Now
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<header class="hero-section relative min-h-screen flex items-center bg-obsidian overflow-hidden">
+
+    <!-- Background -->
+
+    <div class="absolute inset-0">
+
+        <img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=85"
+            alt="Luxury modern residential property"
+            fetchpriority="high"
+            class="w-full h-full object-cover opacity-90">
+
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-obsidian/30"></div>
+
+    </div>
+
+    <!-- Hero Content -->
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-32 pb-24">
+
+        <div class="max-w-3xl">
+
+            <div class="flex items-center gap-4 mb-7" data-aos="fade-up">
+
+                <div class="gold-line"></div>
+
+                <p class="text-burntOrange text-xs md:text-sm tracking-[.35em] uppercase font-medium">
+                    The Name Of Trust
+                </p>
+
+            </div>
+
+            <h1 class="font-display font-bold text-white text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[1.15] mb-8"
+                data-aos="fade-up"
+                data-aos-delay="150">
+
+                Elevate Your
+
+                <span class="block text-gold-gradient">
+                    Lifestyle.
+                </span>
+
+            </h1>
+
+            <p class="text-gray-300 text-base md:text-xl font-light leading-relaxed max-w-xl border-l-2 border-metallic pl-6 mb-10"
+               data-aos="fade-up"
+               data-aos-delay="300">
+
+                Discover ultra-luxurious homes and premium commercial spaces at Science Park, Ahmedabad. Your property partner for a brighter tomorrow.
+
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4"
+                 data-aos="fade-up"
+                 data-aos-delay="450">
+
+                <a href="#residential"
+                   class="bg-burntOrange hover:bg-orangeLight text-white px-9 py-4 text-xs tracking-[.2em] uppercase text-center transition duration-300">
+
+                    Explore Residences
+
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+
+                </a>
+
+                <a href="#commercial"
+                   class="border border-white/40 hover:border-metallic hover:text-metallic text-white px-9 py-4 text-xs tracking-[.2em] uppercase text-center transition duration-300">
+
+                    View Commercial
+
+                </a>
+
+            </div>
+
+            <!-- Hero Bottom Info -->
+
+            <div class="flex flex-wrap gap-8 mt-16 pt-8 border-t border-white/20"
+                 data-aos="fade-up"
+                 data-aos-delay="600">
+
+                <div>
+                    <p class="text-metallic font-display text-xl">Residential</p>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">Premium Living</p>
+                </div>
+
+                <div>
+                    <p class="text-metallic font-display text-xl">Commercial</p>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">Business Spaces</p>
+                </div>
+
+                <div>
+                    <p class="text-metallic font-display text-xl">Consulting</p>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mt-1">Property Solutions</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll -->
+
+    <div class="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-3">
+
+        <span class="text-gray-400 text-[10px] tracking-[.3em] uppercase"
+              style="writing-mode:vertical-rl">
+            Scroll Down
+        </span>
+
+        <div class="h-16 w-px bg-gradient-to-b from-metallic to-transparent"></div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= TRUST BAR ================= -->
+
+<section class="bg-charcoal py-8 border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between gap-7">
+
+        <div class="flex items-center gap-3 text-gray-300 text-xs uppercase tracking-widest">
+            <i class="fa-solid fa-circle-check text-burntOrange text-lg"></i>
+            RERA Approved
+        </div>
+
+        <div class="hidden md:block w-px bg-gray-600"></div>
+
+        <div class="flex items-center gap-3 text-gray-300 text-xs uppercase tracking-widest">
+            <i class="fa-solid fa-shield-halved text-metallic text-lg"></i>
+            Trust • Secure • Genuine
+        </div>
+
+        <div class="hidden md:block w-px bg-gray-600"></div>
+
+        <div class="flex items-center gap-3 text-gray-300 text-xs uppercase tracking-widest">
+            <i class="fa-solid fa-location-dot text-burntOrange text-lg"></i>
+            Prime Location
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESIDENTIAL PROJECT ================= -->
+
+<section id="residential" class="py-24 md:py-32 bg-cream">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Heading -->
+
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+
+            <div data-aos="fade-right">
+
+                <p class="section-label mb-5">
+                    Garden Lakeview | 2 Road Corner
+                </p>
+
+                <h2 class="font-display font-bold text-5xl md:text-7xl text-obsidian leading-tight">
+                    STATUS
+                    <br>
+                    ALTEZZA
+                </h2>
+
+            </div>
+
+            <div class="border-l-2 border-metallic pl-6 md:text-right md:border-l-0 md:border-r-2 md:pr-6"
+                 data-aos="fade-left">
+
+                <p class="text-gray-500 italic text-xl font-light">
+                    "Good Vibes,
+                    <br>
+                    Unlimited Comfort."
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+
+            <!-- Image -->
+
+            <div class="lg:col-span-7 relative premium-img-container h-[350px] md:h-[600px] shadow-2xl"
+                 data-aos="fade-right">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
+                    alt="Luxury Status Altezza residential interior"
+                    loading="lazy"
+                    class="premium-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+
+                <!-- Floating Card -->
+
+                <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 bg-obsidian/95 text-white p-7 md:p-9 max-w-[260px] border-t-2 border-metallic">
+
+                    <p class="font-display text-4xl text-gold-gradient mb-2">
+                        3 BHK
+                    </p>
+
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-4">
+                        King Size Homes
+                    </p>
+
+                    <div class="h-px bg-white/20 mb-4"></div>
+
+                    <p class="text-sm text-gray-300 font-light leading-relaxed">
+                        Ultra luxurious homes designed for space, quality and long-term value.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Specifications -->
+
+            <div class="lg:col-span-5 bg-white p-7 md:p-11 shadow-xl border-t-4 border-burntOrange"
+                 data-aos="fade-left">
+
+                <p class="section-label mb-3">Exclusive Residences</p>
+
+                <h3 class="font-display text-2xl text-obsidian mb-8">
+                    Premium Configurations
+                </h3>
+
+                <div class="space-y-5 mb-9">
+
+                    <div class="flex justify-between gap-3 border-b border-gray-100 pb-4">
+
+                        <span class="text-gray-500 text-xs uppercase tracking-wider">Carpet Area</span>
+
+                        <span class="font-medium text-obsidian text-sm text-right">
+                            2700 - 3000 <small>SQ.FT.</small>
+                        </span>
+
+                    </div>
+
+                    <div class="flex justify-between gap-3 border-b border-gray-100 pb-4">
+
+                        <span class="text-gray-500 text-xs uppercase tracking-wider">Possession</span>
+
+                        <span class="font-medium text-obsidian text-sm text-right">
+                            Mid 2027
+                            <small class="text-burntOrange block">(Show House Ready)</small>
+                        </span>
+
+                    </div>
+
+                    <div class="flex justify-between gap-3 border-b border-gray-100 pb-4">
+
+                        <span class="text-gray-500 text-xs uppercase tracking-wider">Inventory</span>
+
+                        <span class="font-medium text-obsidian text-sm">112 Exclusive Units</span>
+
+                    </div>
+
+                    <div class="flex justify-between gap-3 border-b border-gray-100 pb-4">
+
+                        <span class="text-gray-500 text-xs uppercase tracking-wider">Parking</span>
+
+                        <span class="font-medium text-obsidian text-sm">2 Allotted Car Spaces</span>
+
+                    </div>
+
+                    <div class="flex justify-between gap-3 border-b border-gray-100 pb-4">
+
+                        <span class="text-gray-500 text-xs uppercase tracking-wider">Structure</span>
+
+                        <span class="font-medium text-obsidian text-sm">2 Basements | 14 Storeys</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Typologies -->
+
+                <p class="text-xs text-gray-400 uppercase tracking-widest mb-4">
+                    Available Typologies
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-9 text-xs">
+
+                    <span class="bg-cream px-3 py-2 border border-gray-200">Type A: 2,880</span>
+
+                    <span class="bg-cream px-3 py-2 border border-gray-200">Type B/C: 2,700</span>
+
+                    <span class="bg-cream px-3 py-2 border border-gray-200">Type D: 3,000</span>
+
+                    <span class="bg-cream px-3 py-2 border border-gray-200">Type E: 2,810</span>
+
+                </div>
+
+                <a href="#contact"
+                   class="bg-obsidian hover:bg-burntOrange text-white flex justify-center items-center gap-3 py-4 text-xs tracking-widest uppercase transition duration-300">
+
+                    Enquire About Residence
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMMERCIAL PROJECT ================= -->
+
+<section id="commercial" class="py-24 md:py-32 bg-obsidian relative overflow-hidden">
+
+    <!-- Background Effects -->
+
+    <div class="absolute -top-20 -left-20 w-80 h-80 bg-burntOrange/20 blur-[120px] rounded-full"></div>
+
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-metallic/10 blur-[130px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+            <!-- Content -->
+
+            <div data-aos="fade-right">
+
+                <div class="inline-block px-5 py-2 border border-metallic/30 mb-7">
+
+                    <p class="text-metallic text-xs tracking-[.3em] uppercase">
+                        Coming Soon
+                    </p>
+
+                </div>
+
+                <p class="section-label mb-5">
+                    Commercial Development
+                </p>
+
+                <h2 class="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-8">
+
+                    ALTEZZA
+
+                    <span class="block text-orange-gradient">
+                        ONE
+                    </span>
+
+                </h2>
+
+                <p class="text-gray-400 text-lg font-light leading-relaxed mb-10 max-w-lg">
+
+                    Premium commercial spaces at Science Park, S.P. Ring Road. A G+12 commercial tower and G+3 retail hub designed for visionary businesses. AMC Plan Approved.
+
+                </p>
+
+                <!-- Feature Grid -->
+
+                <div class="grid grid-cols-2 gap-4 mb-10">
+
+                    <div class="bg-charcoal/80 p-6 border-l-2 border-burntOrange">
+
+                        <p class="font-display text-3xl text-white mb-2">G+12</p>
+
+                        <p class="text-gray-400 text-xs uppercase tracking-wider">Commercial Tower</p>
+
+                    </div>
+
+                    <div class="bg-charcoal/80 p-6 border-l-2 border-metallic">
+
+                        <p class="font-display text-3xl text-white mb-2">G+3</p>
+
+                        <p class="text-gray-400 text-xs uppercase tracking-wider">Retail & Showrooms</p>
+
+                    </div>
+
+                    <div class="bg-charcoal/80 p-6 border-l-2 border-metallic">
+
+                        <p class="font-display text-3xl text-white mb-2">4th-12th</p>
+
+                        <p class="text-gray-400 text-xs uppercase tracking-wider">Premium Offices</p>
+
+                    </div>
+
+                    <div class="bg-charcoal/80 p-6 border-l-2 border-burntOrange">
+
+                        <p class="font-display text-3xl text-white mb-2">4+1</p>
+
+                        <p class="text-gray-400 text-xs uppercase tracking-wider">Basement Parking</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Areas -->
+
+                <div class="flex flex-wrap gap-10 border-t border-white/10 pt-8 mb-9">
+
+                    <div>
+
+                        <p class="text-gray-500 text-[10px] uppercase tracking-widest mb-2">Retail Area</p>
+
+                        <p class="text-white text-xl font-medium">
+                            2,246 <small class="text-gray-400">Sq.Ft.+</small>
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-gray-500 text-[10px] uppercase tracking-widest mb-2">Office Area</p>
+
+                        <p class="text-white text-xl font-medium">
+                            954 <small class="text-gray-400">Sq.Ft.+</small>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <a href="#contact"
+                   class="inline-flex items-center gap-4 bg-burntOrange hover:bg-orangeLight text-white px-8 py-4 text-xs uppercase tracking-widest transition">
+
+                    Book Via TSG
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            <!-- Image -->
+
+            <div class="premium-img-container relative shadow-2xl"
+                 data-aos="fade-left">
+
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85"
+                    alt="Modern commercial high rise tower"
+                    loading="lazy"
+                    class="premium-img w-full h-[450px] md:h-[650px] object-cover">
+
+                <div class="absolute inset-0 border border-white/30 m-4 pointer-events-none"></div>
+
+                <div class="absolute bottom-8 left-8 bg-obsidian/90 px-6 py-5 border-l-2 border-metallic">
+
+                    <p class="text-metallic text-xs uppercase tracking-widest mb-2">
+                        Altezza One
+                    </p>
+
+                    <p class="text-white font-display text-xl">
+                        Business Meets Excellence
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT GALLERY ================= -->
+
+<section id="gallery" class="py-24 md:py-32 bg-cream">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+
+            <p class="section-label mb-4">
+                A Glimpse Of Excellence
+            </p>
+
+            <h2 class="font-display font-bold text-4xl md:text-5xl text-obsidian mb-6">
+                Explore Our Projects
+            </h2>
+
+            <div class="gold-line mx-auto mb-6"></div>
+
+            <p class="text-gray-500 max-w-xl mx-auto font-light leading-relaxed">
+                Discover thoughtfully designed residential spaces and premium commercial developments that reflect modern architecture and quality.
+            </p>
+
+        </div>
+
+        <!-- Gallery Grid -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Gallery 1 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                    alt="Luxury residential interior"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Residential
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Elegant Living
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Gallery 2 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                    alt="Premium modern living room"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Residential
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Modern Interiors
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Gallery 3 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85"
+                    alt="Commercial building architecture"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Commercial
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Corporate Spaces
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Gallery 4 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+                    alt="Premium contemporary house interior"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Architecture
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Refined Design
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Gallery 5 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                    alt="Contemporary premium home"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Lifestyle
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Premium Comfort
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Gallery 6 -->
+
+            <div class="gallery-card premium-img-container relative h-[300px] md:h-[350px]"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                    alt="Modern commercial office interior"
+                    loading="lazy"
+                    class="gallery-img w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+                <div class="absolute bottom-7 left-7">
+
+                    <p class="text-metallic text-[10px] tracking-widest uppercase mb-2">
+                        Commercial
+                    </p>
+
+                    <h3 class="font-display text-white text-xl">
+                        Modern Workspaces
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+
+            <a href="#contact"
+               class="inline-flex items-center gap-3 border border-obsidian px-9 py-4 text-xs uppercase tracking-widest hover:bg-obsidian hover:text-white transition">
+
+                Enquire About Properties
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PHILOSOPHY ================= -->
+
+<section id="philosophy" class="py-24 md:py-32 bg-white relative">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <div data-aos="zoom-in">
+
+            <i class="fa-solid fa-building text-burntOrange text-5xl mb-9"></i>
+
+        </div>
+
+        <p class="section-label mb-5" data-aos="fade-up">
+            About TSG Real Estate
+        </p>
+
+        <h2 class="font-display font-bold text-4xl md:text-6xl text-obsidian leading-tight mb-9"
+            data-aos="fade-up">
+
+            Your Property Partner For A
+
+            <span class="block text-orange-gradient">
+                Brighter Tomorrow
+            </span>
+
+        </h2>
+
+        <div class="gold-line mx-auto mb-9"></div>
+
+        <p class="text-gray-600 text-base md:text-lg font-light leading-relaxed mb-12"
+           data-aos="fade-up"
+           data-aos-delay="150">
+
+            TSG Real Estate Consulting is a corporate real estate platform where system, ethics and discipline work together. We specialize in Buy, Sell, Rent, Investment and Consultancy. Your trusted RERA registered channel partner.
+
+        </p>
+
+        <!-- Services -->
+
+        <div class="flex flex-wrap justify-center gap-3"
+             data-aos="fade-up"
+             data-aos-delay="300">
+
+            <span class="border border-gray-200 px-7 py-3 text-xs uppercase tracking-widest hover:border-burntOrange hover:text-burntOrange transition">
+                Buy
+            </span>
+
+            <span class="border border-gray-200 px-7 py-3 text-xs uppercase tracking-widest hover:border-burntOrange hover:text-burntOrange transition">
+                Sell
+            </span>
+
+            <span class="border border-gray-200 px-7 py-3 text-xs uppercase tracking-widest hover:border-burntOrange hover:text-burntOrange transition">
+                Rent
+            </span>
+
+            <span class="border border-gray-200 px-7 py-3 text-xs uppercase tracking-widest hover:border-burntOrange hover:text-burntOrange transition">
+                Investment
+            </span>
+
+            <span class="border border-gray-200 px-7 py-3 text-xs uppercase tracking-widest hover:border-burntOrange hover:text-burntOrange transition">
+                Consultancy
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section id="contact" class="py-24 md:py-32 bg-obsidian relative overflow-hidden">
+
+    <div class="absolute top-0 right-0 w-96 h-96 bg-burntOrange/10 rounded-full blur-[120px]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <div class="grid lg:grid-cols-2 gap-16">
+
+            <!-- Left Content -->
+
+            <div data-aos="fade-right">
+
+                <p class="section-label mb-5">
+                    Let's Connect
+                </p>
+
+                <h2 class="font-display text-4xl md:text-6xl text-white font-bold leading-tight mb-8">
+
+                    Find Your
+
+                    <span class="block text-gold-gradient">
+                        Perfect Space.
+                    </span>
+
+                </h2>
+
+                <p class="text-gray-400 font-light leading-relaxed max-w-md mb-10">
+
+                    Looking for a premium residence or commercial property? Connect with our team and let us help you find the right property.
+
+                </p>
+
+                <!-- Contact Information -->
+
+                <div class="space-y-7">
+
+                    <div class="flex gap-5 items-start">
+
+                        <div class="w-12 h-12 border border-metallic/40 flex items-center justify-center text-metallic flex-shrink-0">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-gray-500 text-xs uppercase tracking-widest mb-2">
+                                Call Us
+                            </p>
+
+                            <a href="tel:+919638604688"
+                               class="text-white hover:text-metallic transition">
+
+                                +91 96386 04688
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex gap-5 items-start">
+
+                        <div class="w-12 h-12 border border-metallic/40 flex items-center justify-center text-metallic flex-shrink-0">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-gray-500 text-xs uppercase tracking-widest mb-2">
+                                Corporate Office
+                            </p>
+
+                            <p class="text-gray-300 text-sm leading-relaxed max-w-sm">
+
+                                I-322, Third Floor, Titanium City Center Mall, Satellite, Ahmedabad.
+
+                            </p>
+
+                            <a href="https://www.google.com/maps/search/?api=1&query=Titanium+City+Center+Mall+Satellite+Ahmedabad"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="inline-block text-metallic text-xs mt-3 hover:text-orangeLight">
+
+                                Get Directions
+                                <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Enquiry Form -->
+
+            <div class="bg-white p-7 md:p-10 shadow-2xl"
+                 data-aos="fade-left">
+
+                <p class="section-label mb-3">
+                    Property Enquiry
+                </p>
+
+                <h3 class="font-display text-2xl text-obsidian mb-8">
+                    Get In Touch With Us
+                </h3>
+
+                <form id="enquiryForm" class="space-y-5">
+
+                    <div>
+
+                        <label for="name" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Enter your name"
+                            class="w-full border border-gray-200 px-4 py-4 outline-none focus:border-burntOrange text-sm">
+
+                    </div>
+
+                    <div>
+
+                        <label for="phone" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                            pattern="[0-9+\-\s]{10,15}"
+                            placeholder="Enter your phone number"
+                            class="w-full border border-gray-200 px-4 py-4 outline-none focus:border-burntOrange text-sm">
+
+                    </div>
+
+                    <div>
+
+                        <label for="interest" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">
+                            Interested In *
+                        </label>
+
+                        <select
+                            id="interest"
+                            name="interest"
+                            required
+                            class="w-full border border-gray-200 px-4 py-4 outline-none focus:border-burntOrange text-sm bg-white">
+
+                            <option value="">Select Property Type</option>
+
+                            <option value="Status Altezza - Residential">Status Altezza - Residential</option>
+
+                            <option value="Altezza One - Commercial">Altezza One - Commercial</option>
+
+                            <option value="Other Property Enquiry">Other Property Enquiry</option>
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        <label for="message" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">
+                            Your Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us what you are looking for..."
+                            class="w-full border border-gray-200 px-4 py-4 outline-none focus:border-burntOrange text-sm resize-none"></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full bg-burntOrange hover:bg-orangeLight text-white py-4 uppercase text-xs tracking-widest transition duration-300">
+
+                        Send Enquiry Via WhatsApp
+
+                        <i class="fa-brands fa-whatsapp ml-2 text-base"></i>
+
+                    </button>
+
+                    <p class="text-xs text-gray-400 text-center">
+                        Your enquiry will open directly in WhatsApp.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#08090C] pt-20 pb-8 border-t border-metallic/20 relative overflow-hidden">
+
+    <div class="absolute bottom-0 left-0 w-full opacity-[.035] pointer-events-none">
+
+        <p class="text-[100px] md:text-[170px] font-display font-bold text-white text-center whitespace-nowrap">
+            TSG REAL ESTATE
+        </p>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <div class="grid md:grid-cols-12 gap-12 mb-16">
+
+            <!-- Brand -->
+
+            <div class="md:col-span-5" data-aos="fade-up">
+
+                <a href="#" class="inline-flex items-center gap-3 mb-6">
+
+                    <svg class="w-10 h-10 text-burntOrange" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 22h20L12 2zm0 4l6.5 12h-13L12 6z"/>
+                    </svg>
+
+                    <h3 class="font-display font-bold text-3xl tracking-widest text-white">
+                        TSG
+                    </h3>
+
+                </a>
+
+                <p class="text-gray-400 font-light leading-relaxed mb-6 max-w-sm">
+
+                    Real Estate Consulting. The name of trust. Your property partner for a brighter tomorrow.
+
+                </p>
+
+                <p class="text-metallic text-xs uppercase tracking-[.3em] font-semibold">
+                    Trust • Secure • Genuine
+                </p>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="md:col-span-4" data-aos="fade-up" data-aos-delay="100">
+
+                <h4 class="text-white text-xs uppercase tracking-widest font-semibold mb-7">
+                    Corporate Office
+                </h4>
+
+                <ul class="space-y-5 text-sm text-gray-400 font-light">
+
+                    <li class="flex gap-3">
+
+                        <i class="fa-solid fa-location-dot text-burntOrange mt-1"></i>
+
+                        <span>
+                            I-322, Third Floor, Titanium City Center Mall, Satellite, Ahmedabad.
+                        </span>
+
+                    </li>
+
+                    <li class="flex gap-3">
+
+                        <i class="fa-solid fa-phone text-metallic mt-1"></i>
+
+                        <a href="tel:+919638604688" class="hover:text-metallic transition">
+                            +91 96386 04688
+                        </a>
+
+                    </li>
+
+                    <li class="flex gap-3">
+
+                        <i class="fa-brands fa-whatsapp text-metallic mt-1"></i>
+
+                        <a href="https://wa.me/919638604688"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="hover:text-metallic transition">
+
+                            WhatsApp Us
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Projects -->
+
+            <div class="md:col-span-3" data-aos="fade-up" data-aos-delay="200">
+
+                <h4 class="text-white text-xs uppercase tracking-widest font-semibold mb-7">
+                    Project Locations
+                </h4>
+
+                <ul class="space-y-5 text-sm text-gray-400 font-light">
+
+                    <li>
+
+                        <span class="text-metallic block mb-1">
+                            Status Altezza
+                        </span>
+
+                        Science Park, Ahmedabad
+
+                    </li>
+
+                    <li>
+
+                        <span class="text-metallic block mb-1">
+                            Altezza One
+                        </span>
+
+                        S.P. Ring Road, Science Park
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+
+            <p class="text-xs text-gray-500">
+                © 2026 TSG Real Estate Consulting. All rights reserved.
+            </p>
+
+            <p class="text-xs text-gray-500">
+                Designed for luxury living. Information subject to verification.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a href="https://wa.me/919638604688?text=Hello%20TSG%20Real%20Estate%2C%20I%20have%20a%20property%20query%20from%20your%20website."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with TSG Real Estate on WhatsApp"
+   class="whatsapp-float fixed bottom-6 right-5 md:right-8 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl hover:scale-110 transition">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="backToTop"
+        aria-label="Back to top"
+        class="fixed bottom-24 right-6 md:right-8 z-40 w-11 h-11 bg-obsidian border border-metallic/40 text-metallic flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-burntOrange hover:text-white">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+    // AOS Animation
+
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 60
+    });
+
+
+    // Mobile Navigation
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function closeMenu() {
+
+        mobileMenu.classList.add('hidden');
+
+        menuBtn.classList.remove('menu-active');
+
+        menuBtn.setAttribute('aria-expanded', 'false');
+
+        menuBtn.setAttribute('aria-label', 'Open navigation menu');
+
+    }
+
+    menuBtn.addEventListener('click', () => {
+
+        const isOpen = !mobileMenu.classList.contains('hidden');
+
+        if (isOpen) {
+
+            closeMenu();
+
+        } else {
+
+            mobileMenu.classList.remove('hidden');
+
+            menuBtn.classList.add('menu-active');
+
+            menuBtn.setAttribute('aria-expanded', 'true');
+
+            menuBtn.setAttribute('aria-label', 'Close navigation menu');
+
+        }
+
+        // Close Mobile Menu On Scroll
+
+window.addEventListener('scroll', () => {
+    if (window.innerWidth < 768 && !mobileMenu.classList.contains('hidden')) {
+        closeMenu();
+    }
+}, { passive: true });
+
+    });
+
+
+    // Close menu when clicking links
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+
+        link.addEventListener('click', closeMenu);
+
+    });
+
+
+    // Close menu on Escape
+
+    document.addEventListener('keydown', (e) => {
+
+        if (e.key === 'Escape') {
+            closeMenu();
+        }
+
+    });
+
+
+    // Back To Top
+
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+
+        if (window.scrollY > 450) {
+
+            backToTop.classList.remove('opacity-0', 'invisible');
+
+        } else {
+
+            backToTop.classList.add('opacity-0', 'invisible');
+
+        }
+
+    });
+
+    backToTop.addEventListener('click', () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+    });
+
+
+    // WhatsApp Enquiry Form
+
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+
+        const phone = document.getElementById('phone').value.trim();
+
+        const interest = document.getElementById('interest').value;
+
+        const message = document.getElementById('message').value.trim();
+
+        const whatsappMessage =
+`Hello TSG Real Estate,
+
+I have an enquiry from your website.
+
+Name: ${name}
+
+Phone: ${phone}
+
+Interested In: ${interest}
+
+Message: ${message || 'No additional message'}
+
+Please contact me regarding the property.
+
+Thank you.`;
+
+
+        const whatsappURL =
+            'https://wa.me/919638604688?text=' +
+            encodeURIComponent(whatsappMessage);
+
+        window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+
+    });
+
+
+    // Navbar Shadow On Scroll
+
+    window.addEventListener('scroll', () => {
+
+        const navbar = document.getElementById('navbar');
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add('shadow-xl');
+
+        } else {
+
+            navbar.classList.remove('shadow-xl');
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
