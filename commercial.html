@@ -388,77 +388,113 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 <!-- ================= HERO SECTION ================= -->
-<section class="hero min-h-[730px] md:min-h-[800px] flex items-center relative">
+<section class="hero min-h-[680px] sm:min-h-[730px] md:min-h-[800px] flex items-center relative">
 
     <div class="absolute inset-0"></div>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10 pt-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full relative z-10 pt-24 pb-16 md:pb-0">
 
         <div class="max-w-3xl" data-aos="fade-up">
 
-            <div class="flex items-center gap-4 mb-7">
+            <!-- Section Label -->
+            <div class="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-7">
+
                 <div class="pink-line"></div>
-                <p class="text-[#E7A5BE] text-xs tracking-[.32em] uppercase">
+
+                <p class="text-[#E7A5BE] text-[10px] sm:text-xs tracking-[.22em] sm:tracking-[.32em] uppercase">
                     An Upcoming Commercial Destination
                 </p>
+
             </div>
 
-            <p class="inline-flex items-center gap-3 border border-[#E7A5BE]/50 text-[#F1C6D8] px-5 py-2 text-[10px] tracking-[.25em] uppercase mb-7">
+            <!-- Coming Soon -->
+            <p class="inline-flex items-center gap-2 sm:gap-3 border border-[#E7A5BE]/50 text-[#F1C6D8] px-4 sm:px-5 py-2 text-[9px] sm:text-[10px] tracking-[.2em] sm:tracking-[.25em] uppercase mb-5 sm:mb-7">
+
                 <span class="w-2 h-2 rounded-full bg-[#E7A5BE]"></span>
                 Coming Soon
+
             </p>
 
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-[1.15] text-white">
+            <!-- Main Heading -->
+            <h1 class="text-[42px] leading-[1.12] 
+                       sm:text-5xl md:text-6xl lg:text-[72px] 
+                       md:leading-[1.15] text-white">
+
                 ALTEZZA
                 <span class="block text-[#E7A5BE]">ONE.</span>
+
             </h1>
 
-            <p class="text-white/85 text-lg md:text-xl mt-6 font-light">
+            <!-- Tagline -->
+            <p class="text-white/85 text-base sm:text-lg md:text-xl mt-4 sm:mt-6 font-light leading-7 sm:leading-normal">
+
                 A New Address for Business. A New Space for Possibilities.
+
             </p>
 
-            <div class="inline-flex items-center gap-3 mt-7 bg-white/10 border border-white/15 px-5 py-3">
+            <!-- AMC Approval -->
+            <div class="inline-flex items-center gap-3 mt-5 sm:mt-7 bg-white/10 border border-white/15 px-4 sm:px-5 py-3">
+
                 <i class="fas fa-circle-check text-[#E7A5BE]"></i>
-                <span class="text-white text-sm tracking-wide">
+
+                <span class="text-white text-xs sm:text-sm tracking-wide">
                     AMC Plan Approved
                 </span>
+
             </div>
 
-            <p class="text-white/65 text-sm md:text-base leading-8 mt-7 max-w-xl">
+            <!-- Description -->
+            <p class="text-white/65 text-[13px] sm:text-sm md:text-base leading-7 sm:leading-8 mt-5 sm:mt-7 max-w-xl">
+
                 The first commercial project in Science Park,
                 S P Ring Road, bringing together retail spaces,
                 showrooms and modern office opportunities.
+
             </p>
 
-            <div class="flex flex-wrap gap-4 mt-10">
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-3 sm:gap-4 mt-7 sm:mt-10">
 
                 <a href="#spaces"
-                   class="pink-button px-8 py-4 text-xs uppercase tracking-[.17em] font-semibold">
+                   class="pink-button px-5 sm:px-8 py-3.5 sm:py-4 text-[10px] sm:text-xs uppercase tracking-[.13em] sm:tracking-[.17em] font-semibold">
+
                     Explore Spaces
                     <i class="fas fa-arrow-right ml-2"></i>
+
                 </a>
 
                 <a href="#contact"
-                   class="outline-button px-8 py-4 text-xs uppercase tracking-[.17em]">
+                   class="outline-button px-5 sm:px-8 py-3.5 sm:py-4 text-[10px] sm:text-xs uppercase tracking-[.13em] sm:tracking-[.17em]">
+
                     Enquire Now
+
                 </a>
 
             </div>
 
-            <p class="text-white/45 text-xs mt-8 tracking-wider">
+            <!-- Project Credit -->
+            <p class="text-white/45 text-[10px] sm:text-xs mt-6 sm:mt-8 tracking-wider">
+
                 A Project by Altezza Group
+
             </p>
 
         </div>
+
     </div>
 
+    <!-- Location -->
     <div class="absolute bottom-8 right-8 hidden md:flex items-center gap-4 text-white/70 text-xs tracking-[.2em] uppercase">
+
         <span class="pink-line"></span>
         Science Park, S P Ring Road
+
     </div>
 
 </section>
+
 
 
 <!-- ================= QUICK PROJECT DETAILS ================= -->
@@ -1382,22 +1418,42 @@ document.addEventListener("DOMContentLoaded", function () {
 </footer>
 
 
-<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
-<a href="https://wa.me/919090040423?text=Hello%2C%20I%20am%20interested%20in%20Altezza%20One%20commercial%20project."
+
+<a href="https://wa.me/919638604688?text=Enquiry%20from%20website"
    target="_blank"
    rel="noopener noreferrer"
-   aria-label="WhatsApp Altezza One"
+   aria-label="Chat with TSG Real Estate on WhatsApp"
    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 
-<!-- ================= BACK TO TOP ================= -->
+
+
+<!-- BACK TO TOP -->
 <button id="backToTop"
-        aria-label="Back to top"
-        class="fixed bottom-24 right-7 z-40 w-11 h-11 bg-[#9F206B] text-white hidden items-center justify-center shadow-lg hover:bg-[#79164F] transition">
+    aria-label="Back to top"
+    class="fixed bottom-24 right-7 z-[9999] w-11 h-11 bg-[#9F206B] text-white flex items-center justify-center shadow-lg hover:bg-[#79164F] transition">
     <i class="fas fa-arrow-up"></i>
 </button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.getElementById("backToTop");
+
+    if (!backToTop) return;
+
+    window.addEventListener("scroll", function () {
+        backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+});
+</script>
 
 
 <!-- ================= JAVASCRIPT ================= -->
@@ -1496,6 +1552,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 </script>
+
 
 </body>
 </html>

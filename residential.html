@@ -288,62 +288,108 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 <!-- ================= HERO SECTION ================= -->
-<section class="hero-section min-h-[690px] md:min-h-[780px] flex items-center relative">
+<section class="hero-section min-h-[650px] sm:min-h-[690px] md:min-h-[780px] flex items-center relative">
+
     <div class="absolute inset-0 bg-[#101820]/10"></div>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full pt-28 pb-20 relative z-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full pt-24 pb-20 md:pt-28 relative z-10">
+
         <div class="max-w-2xl" data-aos="fade-up">
 
-            <div class="flex items-center gap-3 mb-7">
+            <!-- Label -->
+            <div class="flex items-center gap-3 mb-5 sm:mb-7">
                 <span class="gold-line"></span>
-                <span class="text-[#D9BD8B] text-xs tracking-[4px] uppercase">Exclusive Residential Living</span>
+                <span class="text-[#D9BD8B] text-[10px] sm:text-xs tracking-[2.5px] sm:tracking-[4px] uppercase">
+                    Exclusive Residential Living
+                </span>
             </div>
 
-            <p class="text-white/80 text-sm tracking-[3px] uppercase mb-4">Introducing</p>
+            <!-- Introducing -->
+            <p class="text-white/80 text-xs sm:text-sm tracking-[2px] sm:tracking-[3px] uppercase mb-3 sm:mb-4">
+                Introducing
+            </p>
 
-            <h1 class="heading-font text-4xl sm:text-5xl md:text-7xl text-white leading-tight mb-6">
+            <!-- Main Heading -->
+            <h1 class="heading-font text-[38px] leading-tight 
+                       sm:text-5xl md:text-7xl text-white mb-4 sm:mb-6">
                 STATUS <span class="text-[#C5A46D]">ALTEZZA</span>
             </h1>
 
-            <p class="text-white text-xl sm:text-2xl font-light mb-5">
+            <!-- Tagline -->
+            <p class="text-white text-lg sm:text-xl md:text-2xl font-light mb-4 sm:mb-5">
                 Good Vibes, Unlimited Comfort.
             </p>
 
-            <p class="text-white/75 text-base sm:text-lg leading-8 max-w-xl mb-9">
+            <!-- Description -->
+            <p class="text-white/75 text-sm sm:text-base md:text-lg leading-7 sm:leading-8 max-w-xl mb-7 sm:mb-9">
                 Discover thoughtfully designed 3 BHK residences offering spacious living, an exclusive community and beautiful garden lake views.
             </p>
 
-            <div class="flex flex-wrap gap-4">
-                <a href="#overview" class="bg-[#C5A46D] text-[#101820] px-8 py-4 text-xs font-semibold uppercase tracking-widest hover:bg-white transition">
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-3 sm:gap-4">
+
+                <a href="#overview"
+                   class="bg-[#C5A46D] text-[#101820] px-5 sm:px-8 py-3.5 sm:py-4 text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-widest hover:bg-white transition">
                     Explore Project
                 </a>
-                <a href="#contact" class="border border-white/70 text-white px-8 py-4 text-xs font-semibold uppercase tracking-widest hover:bg-white hover:text-[#101820] transition">
+
+                <a href="#contact"
+                   class="border border-white/70 text-white px-5 sm:px-8 py-3.5 sm:py-4 text-[10px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-widest hover:bg-white hover:text-[#101820] transition">
                     Enquire Now
                 </a>
+
             </div>
 
-            <div class="mt-12 flex flex-wrap gap-8 text-white">
+            <!-- Project Statistics -->
+            <div class="mt-9 sm:mt-12 flex flex-wrap items-center gap-x-5 sm:gap-x-8 gap-y-5 text-white">
+
+                <!-- Units -->
                 <div>
-                    <p class="heading-font text-3xl text-[#C5A46D]">112</p>
-                    <p class="text-xs text-white/70 tracking-wider mt-1">Exclusive Units</p>
+                    <p class="heading-font text-2xl sm:text-3xl text-[#C5A46D]">
+                        112
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-white/70 tracking-wider mt-1">
+                        Exclusive Units
+                    </p>
                 </div>
-                <div class="w-px bg-white/30"></div>
+
+                <div class="hidden sm:block w-px h-12 bg-white/30"></div>
+
+                <!-- BHK -->
                 <div>
-                    <p class="heading-font text-3xl text-[#C5A46D]">3 BHK</p>
-                    <p class="text-xs text-white/70 tracking-wider mt-1">Premium Residences</p>
+                    <p class="heading-font text-2xl sm:text-3xl text-[#C5A46D]">
+                        3 BHK
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-white/70 tracking-wider mt-1">
+                        Premium Residences
+                    </p>
                 </div>
-                <div class="w-px bg-white/30"></div>
+
+                <div class="hidden sm:block w-px h-12 bg-white/30"></div>
+
+                <!-- Parking -->
                 <div>
-                    <p class="heading-font text-3xl text-[#C5A46D]">2</p>
-                    <p class="text-xs text-white/70 tracking-wider mt-1">Allotted Car Spaces</p>
+                    <p class="heading-font text-2xl sm:text-3xl text-[#C5A46D]">
+                        2
+                    </p>
+                    <p class="text-[10px] sm:text-xs text-white/70 tracking-wider mt-1">
+                        Allotted Car Spaces
+                    </p>
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
-    <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#F7F5F0] to-transparent"></div>
+    <!-- Bottom Gradient -->
+    <div class="absolute bottom-0 left-0 w-full h-16 sm:h-20 bg-gradient-to-t from-[#F7F5F0] to-transparent pointer-events-none"></div>
+
 </section>
+
 
 
 <!-- ================= PROJECT INTRODUCTION ================= -->
@@ -907,14 +953,15 @@ document.addEventListener("DOMContentLoaded", function () {
 </footer>
 
 
-<!-- ================= FLOATING WHATSAPP ================= -->
-<a href="https://wa.me/919638604688?text=Hello%20TSG%20Real%20Estate%2C%20I%20am%20interested%20in%20Status%20Altezza."
+
+<a href="https://wa.me/919638604688?text=Enquiry%20from%20website"
    target="_blank"
    rel="noopener noreferrer"
    aria-label="Chat with TSG Real Estate on WhatsApp"
-   class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition">
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition">
     <i class="fab fa-whatsapp"></i>
 </a>
+
 
 <!-- Back To Top -->
 <button id="backToTop" aria-label="Back to top"
@@ -1019,6 +1066,29 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         },
     });
+</script>
+
+
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+        backToTop.classList.add("flex");
+    } else {
+        backToTop.classList.add("hidden");
+        backToTop.classList.remove("flex");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 </script>
 
 </body>
