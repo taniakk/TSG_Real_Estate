@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
         :root {
             --pink: #9f206b;
@@ -1020,11 +1020,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 
 
+
 <!-- ================= GALLERY ================= -->
-<section id="gallery" class="py-20 md:py-28 bg-[#FCF9F7]">
+<section id="gallery" class="py-20 md:py-28 bg-[#FCF9F7] overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
+        <!-- Section Header -->
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12" data-aos="fade-up">
 
             <div>
@@ -1035,51 +1037,232 @@ document.addEventListener("DOMContentLoaded", function () {
                 </h2>
             </div>
 
-            <p class="text-[#788397] text-sm leading-7 max-w-md">
-                Explore the original project photographs shared
-                by TSG Real Estate.
-            </p>
+            <div class="flex flex-col sm:flex-row sm:items-end gap-5">
 
+                <p class="text-[#788397] text-sm leading-7 max-w-md">
+                    Explore the original project photographs shared
+                    by TSG Real Estate.
+                </p>
+
+                <!-- Navigation Arrows -->
+                <div class="flex gap-3 shrink-0">
+                    <button class="altezza-prev w-11 h-11 border border-[#172D4B]/20 text-[#172D4B] flex items-center justify-center hover:bg-[#172D4B] hover:text-white transition-all duration-300 rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <button class="altezza-next w-11 h-11 border border-[#172D4B]/20 text-[#172D4B] flex items-center justify-center hover:bg-[#9F206B] hover:text-white hover:border-[#9F206B] transition-all duration-300 rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div class="gallery-item md:col-span-2 h-[280px] md:h-[420px]" data-aos="fade-up">
-                <img
-                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building.jpeg"
-                    alt="Original TSG building photograph"
-                    class="gallery-img w-full h-full object-cover"
-                >
+        <!-- Gallery Swiper -->
+        <div class="swiper altezzaGallery" data-aos="fade-up">
+
+            <div class="swiper-wrapper">
+
+                <!-- Image 1 -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building.jpeg"
+                            alt="Original TSG building photograph"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building2.jpeg"
+                            alt="Original TSG property photograph"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_Park.jpeg"
+                            alt="Original TSG park photograph"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_5.jpeg"
+                            alt="Original TSG project photograph"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 5 - Additional -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building2.jpeg?updatedAt=1794836268661"
+                            alt="Altezza One building view"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 6 - Additional -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_4.jpeg?updatedAt=1794836337380"
+                            alt="Altezza One project photograph"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
+                <!-- Image 7 - Additional -->
+                <div class="swiper-slide">
+                    <div class="gallery-item h-[280px] md:h-[480px] overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_5.jpeg?updatedAt=1794836351779"
+                            alt="Altezza One residential project"
+                            class="gallery-img w-full h-full object-cover"
+                        >
+                    </div>
+                </div>
+
             </div>
 
-            <div class="gallery-item h-[280px] md:h-[420px]" data-aos="fade-up" data-aos-delay="100">
-                <img
-                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building2.jpeg"
-                    alt="Original TSG property photograph"
-                    class="gallery-img w-full h-full object-cover"
-                >
-            </div>
-
-            <div class="gallery-item h-[250px]" data-aos="fade-up">
-                <img
-                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_Park.jpeg"
-                    alt="Original TSG park photograph"
-                    class="gallery-img w-full h-full object-cover"
-                >
-            </div>
-
-            <div class="gallery-item md:col-span-2 h-[250px]" data-aos="fade-up" data-aos-delay="100">
-                <img
-                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_5.jpeg"
-                    alt="Original TSG project photograph"
-                    class="gallery-img w-full h-full object-cover"
-                >
-            </div>
+            <!-- Pagination -->
+            <div class="altezza-pagination flex justify-center items-center gap-2 mt-8"></div>
 
         </div>
 
     </div>
 </section>
+
+
+<!-- ================= GALLERY STYLES ================= -->
+<style>
+
+    .altezzaGallery {
+        padding-bottom: 10px;
+    }
+
+    .altezzaGallery .swiper-slide {
+        opacity: 0.65;
+        transform: scale(0.96);
+        transition: all 0.6s ease;
+    }
+
+    .altezzaGallery .swiper-slide-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .altezzaGallery .gallery-item {
+        position: relative;
+        border-radius: 3px;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .altezzaGallery .gallery-img {
+        transition: transform 1s ease;
+    }
+
+    .altezzaGallery .swiper-slide:hover .gallery-img {
+        transform: scale(1.04);
+    }
+
+    /* Pagination */
+    .altezza-pagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: #172D4B;
+        opacity: 0.25;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .altezza-pagination .swiper-pagination-bullet-active {
+        width: 26px;
+        background: #9F206B;
+        opacity: 1;
+    }
+
+</style>
+
+
+<!-- ================= SWIPER JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+    // Altezza One Gallery Slider
+    var altezzaGallery = new Swiper(".altezzaGallery", {
+
+        slidesPerView: 1.1,
+        centeredSlides: true,
+        spaceBetween: 15,
+        loop: true,
+        speed: 850,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        navigation: {
+            nextEl: ".altezza-next",
+            prevEl: ".altezza-prev",
+        },
+
+        pagination: {
+            el: ".altezza-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+
+            640: {
+                slidesPerView: 1.4,
+                spaceBetween: 20,
+            },
+
+            768: {
+                slidesPerView: 1.7,
+                spaceBetween: 24,
+            },
+
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 28,
+            },
+
+            1280: {
+                slidesPerView: 2.2,
+                spaceBetween: 30,
+            },
+
+        },
+
+    });
+
+</script>
 
 
 <!-- ================= PRE-LAUNCH CTA ================= -->
