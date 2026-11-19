@@ -154,6 +154,9 @@
         .detail-row {
             border-bottom: 1px solid rgba(255,255,255,.13);
         }
+        html, body {
+            overflow-x: hidden;
+        }
 
         @media(max-width:767px) {
             .hero {
@@ -168,24 +171,26 @@
 
 
 
+
 <!-- ================= COMMERCIAL NAVBAR ================= -->
 <header id="commercialNav"
     class="fixed top-0 left-0 w-full z-50 bg-[#172D4B]/95 backdrop-blur-md border-b border-white/10">
 
-    <div class="max-w-7xl mx-auto px-5 lg:px-8">
-        <div class="flex items-center justify-between h-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-8">
+        <div class="flex items-center justify-between h-[72px] sm:h-20">
 
             <!-- ALTEZZA ONE LOGO -->
             <a href="commercial.html"
-                class="flex items-center shrink-0 w-[190px]">
+                class="flex items-center shrink-0 w-[155px] sm:w-[190px]">
+
                 <img
                     src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/ALtezza%20One%20logo%20(1).png"
                     alt="Altezza One Logo"
-                    class="h-14 w-full object-contain object-left">
+                    class="h-12 sm:h-14 w-full object-contain object-left">
             </a>
 
             <!-- DESKTOP NAVIGATION -->
-            <nav class="hidden lg:flex items-center justify-center gap-8 text-sm text-white/90">
+            <nav class="hidden lg:flex items-center justify-center gap-6 xl:gap-8 text-sm text-white/90">
 
                 <a href="index.html" class="commercial-nav-link">Home</a>
                 <a href="residential.html" class="commercial-nav-link">Residential</a>
@@ -197,20 +202,26 @@
 
             <!-- DESKTOP CTA -->
             <div class="hidden lg:flex items-center justify-end w-[190px]">
+
                 <a href="#contact"
                     class="inline-flex items-center justify-center bg-[#9F206B] text-white px-6 py-3 text-xs font-semibold tracking-wider uppercase hover:bg-[#79164F] transition">
+
                     Enquire Now
+
                 </a>
+
             </div>
 
             <!-- MOBILE MENU BUTTON -->
             <button
                 id="commercialMenuBtn"
-                class="lg:hidden text-white text-2xl w-10 h-10 flex items-center justify-center"
+                class="lg:hidden text-white text-xl sm:text-2xl w-10 h-10 flex items-center justify-center shrink-0"
                 aria-label="Open menu"
                 aria-expanded="false"
                 aria-controls="commercialMobileMenu">
+
                 <i class="fas fa-bars"></i>
+
             </button>
 
         </div>
@@ -220,7 +231,7 @@
     <div id="commercialMobileMenu"
         class="hidden lg:hidden bg-[#172D4B] border-t border-white/10 shadow-xl">
 
-        <nav class="flex flex-col px-6 py-5 gap-5 text-sm text-white">
+        <nav class="flex flex-col px-5 sm:px-6 py-5 gap-5 text-sm text-white">
 
             <a href="index.html" class="commercial-mobile-link">Home</a>
             <a href="residential.html" class="commercial-mobile-link">Residential</a>
@@ -230,16 +241,21 @@
 
             <a href="#contact"
                 class="bg-[#9F206B] text-white text-center py-3 font-semibold uppercase tracking-wider text-xs hover:bg-[#79164F] transition">
+
                 Enquire Now
+
             </a>
 
         </nav>
+
     </div>
 
 </header>
 
+
 <!-- ================= NAVBAR STYLING ================= -->
 <style>
+
     .commercial-nav-link {
         position: relative;
         padding: 8px 0;
@@ -277,141 +293,99 @@
     .commercial-mobile-link.active {
         color: #E9A8CC;
     }
+
 </style>
+
 
 <!-- ================= NAVBAR JAVASCRIPT ================= -->
 <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
     const commercialMenuBtn = document.getElementById("commercialMenuBtn");
     const commercialMobileMenu = document.getElementById("commercialMobileMenu");
     const commercialNav = document.getElementById("commercialNav");
 
+    if (!commercialMenuBtn || !commercialMobileMenu || !commercialNav) return;
+
+    let lastScrollPosition = window.scrollY;
+
+    // CLOSE MOBILE MENU
     function closeCommercialMenu() {
+
         commercialMobileMenu.classList.add("hidden");
+
         commercialMenuBtn.setAttribute("aria-expanded", "false");
         commercialMenuBtn.setAttribute("aria-label", "Open menu");
+
         commercialMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+
     }
 
-    commercialMenuBtn.addEventListener("click", () => {
+    // TOGGLE MOBILE MENU
+    commercialMenuBtn.addEventListener("click", function () {
+
         const isOpen = !commercialMobileMenu.classList.contains("hidden");
 
         if (isOpen) {
+
             closeCommercialMenu();
+
         } else {
+
             commercialMobileMenu.classList.remove("hidden");
+
             commercialMenuBtn.setAttribute("aria-expanded", "true");
             commercialMenuBtn.setAttribute("aria-label", "Close menu");
+
             commercialMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+
         }
+
     });
 
+    // CLOSE MENU ON NAVIGATION CLICK
     commercialMobileMenu.querySelectorAll("a").forEach(link => {
+
         link.addEventListener("click", closeCommercialMenu);
+
     });
 
-    window.addEventListener("scroll", closeCommercialMenu);
+    // AUTO CLOSE WHEN SCROLLING DOWN
+    window.addEventListener("scroll", function () {
 
-    document.addEventListener("click", event => {
+        const currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 50) {
+            closeCommercialMenu();
+        }
+
+        lastScrollPosition = currentScrollPosition;
+
+    }, { passive: true });
+
+    // CLOSE WHEN CLICKING OUTSIDE
+    document.addEventListener("click", function (event) {
+
         if (!commercialNav.contains(event.target)) {
             closeCommercialMenu();
         }
+
     });
 
-    window.addEventListener("resize", () => {
+    // CLOSE WHEN SWITCHING TO DESKTOP
+    window.addEventListener("resize", function () {
+
         if (window.innerWidth >= 1024) {
             closeCommercialMenu();
         }
+
     });
+
+});
+
 </script>
 
-
-
-<!-- COMMERCIAL NAVBAR CSS -->
-<style>
-    .commercial-nav-link,
-    .commercial-mobile-link {
-        transition: color .3s ease;
-    }
-
-    .commercial-nav-link:hover,
-    .commercial-mobile-link:hover,
-    .commercial-nav-link.active,
-    .commercial-mobile-link.active {
-        color: #E9A8CC;
-    }
-
-    .commercial-nav-link {
-        position: relative;
-    }
-
-    .commercial-nav-link::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 1px;
-        bottom: -7px;
-        left: 0;
-        background: #E9A8CC;
-        transition: width .3s ease;
-    }
-
-    .commercial-nav-link:hover::after,
-    .commercial-nav-link.active::after {
-        width: 100%;
-    }
-</style>
-
-
-<!-- COMMERCIAL NAVBAR JAVASCRIPT -->
-<script>
-    const commercialMenuBtn = document.getElementById('commercialMenuBtn');
-    const commercialMobileMenu = document.getElementById('commercialMobileMenu');
-
-    function closeCommercialMenu() {
-        commercialMobileMenu.classList.add('hidden');
-        commercialMenuBtn.setAttribute('aria-expanded', 'false');
-        commercialMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-
-    commercialMenuBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-
-        const isClosed = commercialMobileMenu.classList.contains('hidden');
-
-        if (isClosed) {
-            commercialMobileMenu.classList.remove('hidden');
-            commercialMenuBtn.setAttribute('aria-expanded', 'true');
-            commercialMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
-        } else {
-            closeCommercialMenu();
-        }
-    });
-
-    // Close after clicking a mobile link
-    commercialMobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', closeCommercialMenu);
-    });
-
-    // Automatically close when scrolling
-    window.addEventListener('scroll', closeCommercialMenu, { passive: true });
-
-    // Close when clicking outside
-    document.addEventListener('click', function(e) {
-        if (
-            !commercialMobileMenu.contains(e.target) &&
-            !commercialMenuBtn.contains(e.target)
-        ) {
-            closeCommercialMenu();
-        }
-    });
-
-    // Close when switching to desktop
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 1024) {
-            closeCommercialMenu();
-        }
-    });
-</script>
 
 
 <!-- ================= HERO SECTION ================= -->

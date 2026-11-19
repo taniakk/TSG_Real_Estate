@@ -124,6 +124,9 @@
         .whatsapp-float {
             animation: gentleBounce 3s infinite;
         }
+        html, body {
+            overflow-x: hidden;
+        }
 
         @keyframes gentleBounce {
             0%, 90%, 100% { transform: translateY(0); }
@@ -141,15 +144,19 @@
 
 <body>
 
+
 <!-- RESIDENTIAL NAVBAR -->
 <header class="fixed top-0 left-0 w-full z-50 bg-[#101820]/95 backdrop-blur-md border-b border-white/10">
+
     <div class="max-w-7xl mx-auto px-5 lg:px-8">
         <div class="flex items-center justify-between h-20">
 
-           <a href="index.html" class="flex items-center gap-3 shrink-0">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
                 <img src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_LOGO.jpeg"
                      alt="TSG Real Estate Logo"
                      class="h-14 w-14 object-contain rounded-sm">
+
                 <div class="text-white">
                     <p class="heading-font text-lg sm:text-xl tracking-wider">TSG</p>
                     <p class="text-[9px] sm:text-[10px] tracking-[2px] text-[#C5A46D] uppercase">
@@ -158,6 +165,7 @@
                 </div>
             </a>
 
+            <!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center gap-8 text-sm text-white/90">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="residential.html" class="nav-link active">Residential</a>
@@ -166,31 +174,117 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
+            <!-- Desktop Button -->
             <a href="#contact"
                class="hidden lg:inline-flex bg-[#C5A46D] text-[#101820] px-6 py-3 text-xs font-semibold tracking-wider uppercase hover:bg-white transition">
                 Enquire Now
             </a>
 
-            <button class="menuBtn lg:hidden text-white text-2xl w-10 h-10"
-                    aria-label="Open menu" aria-expanded="false">
+            <!-- Mobile Menu Button -->
+            <button class="menuBtn lg:hidden text-white text-2xl w-10 h-10 flex items-center justify-center"
+                    aria-label="Open menu"
+                    aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
+
         </div>
     </div>
 
+    <!-- Mobile Navigation -->
     <div class="mobileMenu hidden lg:hidden bg-[#101820] border-t border-white/10 shadow-xl">
+
         <nav class="flex flex-col px-6 py-5 gap-5 text-sm text-white">
+
             <a href="index.html" class="mobile-link">Home</a>
             <a href="residential.html" class="mobile-link active">Residential</a>
             <a href="commercial.html" class="mobile-link">Commercial</a>
             <a href="#overview" class="mobile-link">Overview</a>
             <a href="#contact" class="mobile-link">Contact</a>
-            <a href="#contact" class="bg-[#C5A46D] text-[#101820] text-center py-3 font-semibold uppercase tracking-wider text-xs">
+
+            <a href="#contact"
+               class="bg-[#C5A46D] text-[#101820] text-center py-3 font-semibold uppercase tracking-wider text-xs">
                 Enquire Now
             </a>
+
         </nav>
     </div>
+
 </header>
+
+
+<!-- ================= MOBILE NAVBAR SCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.querySelector(".menuBtn");
+    const mobileMenu = document.querySelector(".mobileMenu");
+    const menuIcon = menuBtn.querySelector("i");
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    let lastScrollPosition = window.scrollY;
+
+    // Toggle Mobile Menu
+    menuBtn.addEventListener("click", function () {
+
+        const isOpen = !mobileMenu.classList.contains("hidden");
+
+        mobileMenu.classList.toggle("hidden");
+
+        menuIcon.classList.toggle("fa-bars", isOpen);
+        menuIcon.classList.toggle("fa-times", !isOpen);
+
+        menuBtn.setAttribute("aria-expanded", !isOpen);
+        menuBtn.setAttribute("aria-label", isOpen ? "Open menu" : "Close menu");
+
+    });
+
+    // Close Mobile Menu
+    function closeMobileMenu() {
+
+        mobileMenu.classList.add("hidden");
+
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.setAttribute("aria-label", "Open menu");
+
+    }
+
+    // Close When Clicking Navigation Links
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            closeMobileMenu();
+        });
+
+    });
+
+    // Auto Close When Scrolling Down
+    window.addEventListener("scroll", function () {
+
+        const currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 50) {
+            closeMobileMenu();
+        }
+
+        lastScrollPosition = currentScrollPosition;
+
+    }, { passive: true });
+
+    // Close When Switching To Desktop
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth >= 1024) {
+            closeMobileMenu();
+        }
+
+    });
+
+});
+</script>
+
 
 
 
@@ -839,45 +933,6 @@
         offset: 80
     });
 
-    // Mobile Menu
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.toggle('hidden');
-        menuBtn.setAttribute('aria-expanded', String(!isHidden));
-        menuBtn.innerHTML = isHidden
-            ? '<i class="fas fa-bars"></i>'
-            : '<i class="fas fa-times"></i>';
-    });
-
-    // Close mobile menu after clicking a link
-    document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            menuBtn.setAttribute('aria-expanded', 'false');
-            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-        });
-    });
-
-    // Close mobile menu when scrolling
-    window.addEventListener('scroll', () => {
-        if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            menuBtn.setAttribute('aria-expanded', 'false');
-            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-        }
-
-        const backToTop = document.getElementById('backToTop');
-
-        if (window.scrollY > 400) {
-            backToTop.classList.remove('hidden');
-            backToTop.classList.add('flex');
-        } else {
-            backToTop.classList.add('hidden');
-            backToTop.classList.remove('flex');
-        }
-    });
 
     // Back to top
     document.getElementById('backToTop').addEventListener('click', () => {

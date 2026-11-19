@@ -161,6 +161,9 @@
         .form-input option {
             color: #171817;
         }
+        html, body{
+            overflow-x: hidden;
+        }
 
         @media (max-width: 767px) {
             .hero {
@@ -174,7 +177,7 @@
 
 
 <!-- HOMEPAGE NAVBAR -->
-<header class="fixed top-0 left-0 w-full z-50 bg-[#101820]/95 backdrop-blur-md border-b border-white/10">
+<header id="mainHeader" class="fixed top-0 left-0 w-full z-50 bg-[#101820]/95 backdrop-blur-md border-b border-white/10">
     <div class="max-w-7xl mx-auto px-5 lg:px-8">
         <div class="flex items-center justify-between h-20">
 
@@ -203,14 +206,14 @@
                 Enquire Now
             </a>
 
-            <button class="menuBtn lg:hidden text-white text-2xl w-10 h-10"
+            <button id="menuBtn" class="menuBtn lg:hidden text-white text-2xl w-10 h-10"
                     aria-label="Open menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </div>
 
-    <div class="mobileMenu hidden lg:hidden bg-[#101820] border-t border-white/10 shadow-xl">
+    <div id="mobileMenu" class="mobileMenu hidden lg:hidden bg-[#101820] border-t border-white/10 shadow-xl">
         <nav class="flex flex-col px-6 py-5 gap-5 text-sm text-white">
             <a href="index.html" class="mobile-link active">Home</a>
             <a href="residential.html" class="mobile-link">Residential</a>
@@ -223,6 +226,80 @@
         </nav>
     </div>
 </header>
+
+<script>
+(function() {
+    var menuBtn = document.getElementById('menuBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var header = document.getElementById('mainHeader');
+
+    function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        menuBtn.setAttribute('aria-expanded', 'true');
+        var icon = menuBtn.querySelector('i');
+        if (icon) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        }
+    }
+
+    function closeMenu() {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        var icon = menuBtn.querySelector('i');
+        if (icon) {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    }
+
+    menuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (mobileMenu.classList.contains('hidden')) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    });
+
+    // Auto-close on scroll
+    window.addEventListener('scroll', function() {
+        if (!mobileMenu.classList.contains('hidden')) {
+            closeMenu();
+        }
+    }, { passive: true });
+
+    // Close when clicking outside
+    document.addEventListener('click', function(event) {
+        if (mobileMenu.classList.contains('hidden')) return;
+        if (!header.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    // Close on mobile link click
+    mobileMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (e.target.tagName === 'A') {
+            closeMenu();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            closeMenu();
+        }
+    });
+
+    // Reset on resize to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024 && !mobileMenu.classList.contains('hidden')) {
+            closeMenu();
+        }
+    });
+})();
+</script>
 
 
 
@@ -859,47 +936,7 @@
         offset: 70
     });
 
-    // Mobile Menu
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-
-        const icon = menuBtn.querySelector('i');
-
-        if (mobileMenu.classList.contains('hidden')) {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        } else {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark');
-        }
-    });
-
-    // Close mobile menu after selecting a link
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-
-            const icon = menuBtn.querySelector('i');
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        });
-    });
-
-    // Close mobile menu when scrolling
-    window.addEventListener('scroll', () => {
-        if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-
-            const icon = menuBtn.querySelector('i');
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        }
-    });
-
+  
     // Back to top
     const backToTop = document.getElementById('backToTop');
 
