@@ -1,0 +1,1527 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Altezza One | Premium Commercial Spaces | TSG Real Estate</title>
+    <meta name="description" content="Discover Altezza One, an upcoming commercial project at Science Park, S P Ring Road, Ahmedabad. Explore premium office and retail spaces.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --pink: #9f206b;
+            --pink-dark: #79164f;
+            --pink-light: #f6e9f0;
+            --navy: #172d4b;
+            --blue: #315c87;
+            --blue-light: #eaf1f8;
+            --ivory: #fcf9f7;
+            --text: #283348;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--ivory);
+            color: var(--text);
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Cinzel', serif;
+        }
+
+        .hero {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(16, 32, 53, .96) 0%,
+                    rgba(23, 45, 75, .84) 48%,
+                    rgba(23, 45, 75, .24) 100%
+                ),
+                url('https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building.jpeg')
+                center/cover no-repeat;
+        }
+
+        .pink-text {
+            color: var(--pink);
+        }
+
+        .pink-bg {
+            background: var(--pink);
+        }
+
+        .pink-button {
+            background: var(--pink);
+            color: white;
+            transition: .3s ease;
+        }
+
+        .pink-button:hover {
+            background: var(--pink-dark);
+            transform: translateY(-2px);
+        }
+
+        .blue-button {
+            background: var(--navy);
+            color: white;
+            transition: .3s ease;
+        }
+
+        .blue-button:hover {
+            background: var(--blue);
+        }
+
+        .outline-button {
+            border: 1px solid rgba(255,255,255,.7);
+            color: white;
+            transition: .3s ease;
+        }
+
+        .outline-button:hover {
+            background: white;
+            color: var(--navy);
+        }
+
+        .section-label {
+            color: var(--pink);
+            font-size: 11px;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+        }
+
+        .pink-line {
+            width: 48px;
+            height: 1px;
+            background: var(--pink);
+        }
+
+        .feature-card {
+            transition: .35s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 45px rgba(23,45,75,.10);
+        }
+
+        .gallery-item {
+            overflow: hidden;
+        }
+
+        .gallery-img {
+            transition: transform .65s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.045);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #dce2ea;
+            background: white;
+            color: var(--navy);
+            outline: none;
+            transition: border .3s ease;
+        }
+
+        .form-input:focus {
+            border-color: var(--pink);
+        }
+
+        .form-input::placeholder {
+            color: #9299a4;
+        }
+
+        .form-input option {
+            color: var(--navy);
+        }
+
+        .detail-row {
+            border-bottom: 1px solid rgba(255,255,255,.13);
+        }
+
+        @media(max-width:767px) {
+            .hero {
+                background-position: 60% center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+<!-- ================= COMMERCIAL NAVBAR ================= -->
+<header id="commercialNav"
+    class="fixed top-0 left-0 w-full z-50 bg-[#172D4B]/95 backdrop-blur-md border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+
+            <!-- ALTEZZA ONE LOGO -->
+            <a href="commercial.html"
+                class="flex items-center shrink-0 w-[190px]">
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/ALtezza%20One%20logo%20(1).png"
+                    alt="Altezza One Logo"
+                    class="h-14 w-full object-contain object-left">
+            </a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="hidden lg:flex items-center justify-center gap-8 text-sm text-white/90">
+
+                <a href="index.html" class="commercial-nav-link">Home</a>
+                <a href="residential.html" class="commercial-nav-link">Residential</a>
+                <a href="commercial.html" class="commercial-nav-link active">Commercial</a>
+                <a href="#about" class="commercial-nav-link">About</a>
+                <a href="#contact" class="commercial-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- DESKTOP CTA -->
+            <div class="hidden lg:flex items-center justify-end w-[190px]">
+                <a href="#contact"
+                    class="inline-flex items-center justify-center bg-[#9F206B] text-white px-6 py-3 text-xs font-semibold tracking-wider uppercase hover:bg-[#79164F] transition">
+                    Enquire Now
+                </a>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                id="commercialMenuBtn"
+                class="lg:hidden text-white text-2xl w-10 h-10 flex items-center justify-center"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="commercialMobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="commercialMobileMenu"
+        class="hidden lg:hidden bg-[#172D4B] border-t border-white/10 shadow-xl">
+
+        <nav class="flex flex-col px-6 py-5 gap-5 text-sm text-white">
+
+            <a href="index.html" class="commercial-mobile-link">Home</a>
+            <a href="residential.html" class="commercial-mobile-link">Residential</a>
+            <a href="commercial.html" class="commercial-mobile-link active">Commercial</a>
+            <a href="#about" class="commercial-mobile-link">About</a>
+            <a href="#contact" class="commercial-mobile-link">Contact</a>
+
+            <a href="#contact"
+                class="bg-[#9F206B] text-white text-center py-3 font-semibold uppercase tracking-wider text-xs hover:bg-[#79164F] transition">
+                Enquire Now
+            </a>
+
+        </nav>
+    </div>
+
+</header>
+
+<!-- ================= NAVBAR STYLING ================= -->
+<style>
+    .commercial-nav-link {
+        position: relative;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .commercial-nav-link:hover,
+    .commercial-nav-link.active {
+        color: #E9A8CC;
+    }
+
+    .commercial-nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: #9F206B;
+        transition: width 0.3s ease;
+    }
+
+    .commercial-nav-link:hover::after,
+    .commercial-nav-link.active::after {
+        width: 100%;
+    }
+
+    .commercial-mobile-link {
+        color: rgba(255, 255, 255, 0.9);
+        transition: color 0.3s ease;
+    }
+
+    .commercial-mobile-link:hover,
+    .commercial-mobile-link.active {
+        color: #E9A8CC;
+    }
+</style>
+
+<!-- ================= NAVBAR JAVASCRIPT ================= -->
+<script>
+    const commercialMenuBtn = document.getElementById("commercialMenuBtn");
+    const commercialMobileMenu = document.getElementById("commercialMobileMenu");
+    const commercialNav = document.getElementById("commercialNav");
+
+    function closeCommercialMenu() {
+        commercialMobileMenu.classList.add("hidden");
+        commercialMenuBtn.setAttribute("aria-expanded", "false");
+        commercialMenuBtn.setAttribute("aria-label", "Open menu");
+        commercialMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+
+    commercialMenuBtn.addEventListener("click", () => {
+        const isOpen = !commercialMobileMenu.classList.contains("hidden");
+
+        if (isOpen) {
+            closeCommercialMenu();
+        } else {
+            commercialMobileMenu.classList.remove("hidden");
+            commercialMenuBtn.setAttribute("aria-expanded", "true");
+            commercialMenuBtn.setAttribute("aria-label", "Close menu");
+            commercialMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+        }
+    });
+
+    commercialMobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeCommercialMenu);
+    });
+
+    window.addEventListener("scroll", closeCommercialMenu);
+
+    document.addEventListener("click", event => {
+        if (!commercialNav.contains(event.target)) {
+            closeCommercialMenu();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) {
+            closeCommercialMenu();
+        }
+    });
+</script>
+
+
+
+<!-- COMMERCIAL NAVBAR CSS -->
+<style>
+    .commercial-nav-link,
+    .commercial-mobile-link {
+        transition: color .3s ease;
+    }
+
+    .commercial-nav-link:hover,
+    .commercial-mobile-link:hover,
+    .commercial-nav-link.active,
+    .commercial-mobile-link.active {
+        color: #E9A8CC;
+    }
+
+    .commercial-nav-link {
+        position: relative;
+    }
+
+    .commercial-nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+        background: #E9A8CC;
+        transition: width .3s ease;
+    }
+
+    .commercial-nav-link:hover::after,
+    .commercial-nav-link.active::after {
+        width: 100%;
+    }
+</style>
+
+
+<!-- COMMERCIAL NAVBAR JAVASCRIPT -->
+<script>
+    const commercialMenuBtn = document.getElementById('commercialMenuBtn');
+    const commercialMobileMenu = document.getElementById('commercialMobileMenu');
+
+    function closeCommercialMenu() {
+        commercialMobileMenu.classList.add('hidden');
+        commercialMenuBtn.setAttribute('aria-expanded', 'false');
+        commercialMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+
+    commercialMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+
+        const isClosed = commercialMobileMenu.classList.contains('hidden');
+
+        if (isClosed) {
+            commercialMobileMenu.classList.remove('hidden');
+            commercialMenuBtn.setAttribute('aria-expanded', 'true');
+            commercialMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+        } else {
+            closeCommercialMenu();
+        }
+    });
+
+    // Close after clicking a mobile link
+    commercialMobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeCommercialMenu);
+    });
+
+    // Automatically close when scrolling
+    window.addEventListener('scroll', closeCommercialMenu, { passive: true });
+
+    // Close when clicking outside
+    document.addEventListener('click', function(e) {
+        if (
+            !commercialMobileMenu.contains(e.target) &&
+            !commercialMenuBtn.contains(e.target)
+        ) {
+            closeCommercialMenu();
+        }
+    });
+
+    // Close when switching to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024) {
+            closeCommercialMenu();
+        }
+    });
+</script>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero min-h-[730px] md:min-h-[800px] flex items-center relative">
+
+    <div class="absolute inset-0"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10 pt-24">
+
+        <div class="max-w-3xl" data-aos="fade-up">
+
+            <div class="flex items-center gap-4 mb-7">
+                <div class="pink-line"></div>
+                <p class="text-[#E7A5BE] text-xs tracking-[.32em] uppercase">
+                    An Upcoming Commercial Destination
+                </p>
+            </div>
+
+            <p class="inline-flex items-center gap-3 border border-[#E7A5BE]/50 text-[#F1C6D8] px-5 py-2 text-[10px] tracking-[.25em] uppercase mb-7">
+                <span class="w-2 h-2 rounded-full bg-[#E7A5BE]"></span>
+                Coming Soon
+            </p>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-[1.15] text-white">
+                ALTEZZA
+                <span class="block text-[#E7A5BE]">ONE.</span>
+            </h1>
+
+            <p class="text-white/85 text-lg md:text-xl mt-6 font-light">
+                A New Address for Business. A New Space for Possibilities.
+            </p>
+
+            <div class="inline-flex items-center gap-3 mt-7 bg-white/10 border border-white/15 px-5 py-3">
+                <i class="fas fa-circle-check text-[#E7A5BE]"></i>
+                <span class="text-white text-sm tracking-wide">
+                    AMC Plan Approved
+                </span>
+            </div>
+
+            <p class="text-white/65 text-sm md:text-base leading-8 mt-7 max-w-xl">
+                The first commercial project in Science Park,
+                S P Ring Road, bringing together retail spaces,
+                showrooms and modern office opportunities.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mt-10">
+
+                <a href="#spaces"
+                   class="pink-button px-8 py-4 text-xs uppercase tracking-[.17em] font-semibold">
+                    Explore Spaces
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+
+                <a href="#contact"
+                   class="outline-button px-8 py-4 text-xs uppercase tracking-[.17em]">
+                    Enquire Now
+                </a>
+
+            </div>
+
+            <p class="text-white/45 text-xs mt-8 tracking-wider">
+                A Project by Altezza Group
+            </p>
+
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 right-8 hidden md:flex items-center gap-4 text-white/70 text-xs tracking-[.2em] uppercase">
+        <span class="pink-line"></span>
+        Science Park, S P Ring Road
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK PROJECT DETAILS ================= -->
+<section class="bg-[#172D4B] py-10">
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+        <div>
+            <p class="text-3xl md:text-4xl text-[#E7A5BE] serif">G+12</p>
+            <p class="text-white/60 text-xs uppercase tracking-widest mt-2">Commercial Tower</p>
+        </div>
+
+        <div>
+            <p class="text-3xl md:text-4xl text-[#E7A5BE] serif">G+3</p>
+            <p class="text-white/60 text-xs uppercase tracking-widest mt-2">Retail & Showrooms</p>
+        </div>
+
+        <div>
+            <p class="text-2xl md:text-3xl text-[#E7A5BE] serif">954+</p>
+            <p class="text-white/60 text-xs uppercase tracking-widest mt-2">Office Space Sq. Ft.</p>
+        </div>
+
+        <div>
+            <p class="text-2xl md:text-3xl text-[#E7A5BE] serif">2,246+</p>
+            <p class="text-white/60 text-xs uppercase tracking-widest mt-2">Retail Space Sq. Ft.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT OVERVIEW ================= -->
+<section id="overview" class="py-20 md:py-28 bg-[#FCF9F7]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+            <div class="relative" data-aos="fade-right">
+
+                <div class="absolute -top-5 -left-5 w-28 h-28 border border-[#9F206B]/50"></div>
+
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building2.jpeg"
+                    alt="Original TSG commercial project photograph"
+                    class="relative z-10 w-full h-[390px] md:h-[500px] object-cover"
+                >
+
+                <div class="absolute -bottom-5 -right-5 bg-[#9F206B] p-6 md:p-8 z-20">
+                    <p class="text-white serif text-2xl">Altezza One</p>
+                    <p class="text-white/80 text-[10px] uppercase tracking-widest mt-2">
+                        Coming Soon
+                    </p>
+                </div>
+
+            </div>
+
+            <div data-aos="fade-left">
+
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="pink-line"></div>
+                    <p class="section-label">The Development</p>
+                </div>
+
+                <h2 class="text-3xl md:text-4xl lg:text-[43px] leading-tight text-[#172D4B]">
+                    Where Business
+                    <span class="block text-[#9F206B]">Meets Opportunity.</span>
+                </h2>
+
+                <p class="text-[#697487] leading-8 mt-7">
+                    Altezza One is an upcoming commercial project
+                    located in Science Park, S P Ring Road,
+                    West Ahmedabad.
+                </p>
+
+                <p class="text-[#697487] leading-8 mt-4">
+                    Planned with a G+12 commercial tower and a
+                    G+3 retail and showroom development, the project
+                    brings office and retail spaces together.
+                </p>
+
+                <div class="mt-8 p-5 bg-[#F6E9F0] border-l-4 border-[#9F206B]">
+                    <p class="text-[#172D4B] font-semibold">
+                        AMC Plan Approved
+                    </p>
+                    <p class="text-[#788397] text-sm mt-2">
+                        As stated in the project information provided.
+                    </p>
+                </div>
+
+                <a href="#contact"
+                   class="inline-flex items-center gap-3 mt-9 text-[#9F206B] text-xs uppercase tracking-[.2em] font-semibold">
+                    Request Project Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= OFFICE AND RETAIL SPACES ================= -->
+<section id="spaces" class="py-20 md:py-28 bg-[#EAF1F8]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="text-center mb-14" data-aos="fade-up">
+
+            <p class="section-label mb-4">Explore The Opportunities</p>
+
+            <h2 class="text-3xl md:text-5xl text-[#172D4B]">
+                Spaces Designed for
+                <span class="text-[#9F206B]">Business.</span>
+            </h2>
+
+            <p class="text-[#788397] max-w-2xl mx-auto mt-5 leading-7">
+                Discover office and retail spaces within
+                the Altezza One commercial development.
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+
+            <!-- OFFICE SPACES -->
+            <div class="bg-white border border-[#D9E2ED] feature-card overflow-hidden" data-aos="fade-up">
+
+                <div class="bg-[#172D4B] p-8 md:p-10 relative overflow-hidden">
+
+                    <div class="absolute -right-12 -bottom-20 w-64 h-64 rounded-full border border-white/10"></div>
+
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-white/10 flex items-center justify-center text-[#E7A5BE] text-2xl">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <p class="text-[#E7A5BE] text-xs uppercase tracking-[.25em] mt-8">
+                            Commercial Tower
+                        </p>
+
+                        <h3 class="text-3xl text-white mt-3">Office Spaces</h3>
+
+                        <p class="text-white/65 text-sm mt-3">
+                            4th to 12th Floor
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="p-8 md:p-10">
+
+                    <p class="text-[#788397] text-sm leading-7">
+                        Office spaces designed for professionals,
+                        doctors, IT companies, startups and business owners.
+                    </p>
+
+                    <div class="mt-8 p-6 bg-[#EAF1F8]">
+                        <p class="text-xs uppercase tracking-widest text-[#788397]">
+                            Starting Office Area
+                        </p>
+
+                        <p class="text-3xl md:text-4xl text-[#172D4B] serif mt-3">
+                            954+ <span class="text-base">Sq. Ft.</span>
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3 mt-6 text-sm text-[#52647B]">
+                        <i class="fas fa-ruler-vertical text-[#9F206B]"></i>
+                        10 ft clear ceiling height
+                    </div>
+
+                    <a href="#contact"
+                       class="inline-flex items-center gap-3 mt-8 text-[#9F206B] text-xs uppercase tracking-widest font-semibold">
+                        Enquire About Offices
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RETAIL SPACES -->
+            <div class="bg-white border border-[#D9E2ED] feature-card overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+
+                <div class="bg-[#9F206B] p-8 md:p-10 relative overflow-hidden">
+
+                    <div class="absolute -right-12 -bottom-20 w-64 h-64 rounded-full border border-white/15"></div>
+
+                    <div class="relative z-10">
+
+                        <div class="w-14 h-14 bg-white/15 flex items-center justify-center text-white text-2xl">
+                            <i class="fas fa-store"></i>
+                        </div>
+
+                        <p class="text-white/75 text-xs uppercase tracking-[.25em] mt-8">
+                            Retail & Showroom Hub
+                        </p>
+
+                        <h3 class="text-3xl text-white mt-3">Retail Spaces</h3>
+
+                        <p class="text-white/75 text-sm mt-3">
+                            Ground Floor + 3 Floors
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="p-8 md:p-10">
+
+                    <p class="text-[#788397] text-sm leading-7">
+                        Retail and showroom spaces for brands,
+                        restaurants and businesses looking for a
+                        visible commercial presence.
+                    </p>
+
+                    <div class="mt-8 p-6 bg-[#F6E9F0]">
+                        <p class="text-xs uppercase tracking-widest text-[#788397]">
+                            Starting Retail Area
+                        </p>
+
+                        <p class="text-3xl md:text-4xl text-[#9F206B] serif mt-3">
+                            2,246+ <span class="text-base">Sq. Ft.</span>
+                        </p>
+                    </div>
+
+                    <div class="mt-6 space-y-3 text-sm text-[#52647B]">
+
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-ruler-vertical text-[#9F206B]"></i>
+                            Ground floor: 13 ft clear height
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-ruler-vertical text-[#9F206B]"></i>
+                            1st, 2nd & 3rd floors: 11.3 ft clear height
+                        </div>
+
+                    </div>
+
+                    <a href="#contact"
+                       class="inline-flex items-center gap-3 mt-8 text-[#9F206B] text-xs uppercase tracking-widest font-semibold">
+                        Enquire About Retail
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PROJECT SPECIFICATIONS ================= -->
+<section id="features" class="py-20 md:py-28 bg-[#172D4B] relative overflow-hidden">
+
+    <div class="absolute -top-40 -right-20 w-96 h-96 rounded-full border border-white/10"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+            <div data-aos="fade-right">
+
+                <p class="text-[#E7A5BE] text-xs tracking-[.3em] uppercase mb-5">
+                    Designed for Possibilities
+                </p>
+
+                <h2 class="text-3xl md:text-5xl text-white leading-tight">
+                    More Than a
+                    <span class="block text-[#E7A5BE]">Business Address.</span>
+                </h2>
+
+                <p class="text-white/60 leading-8 mt-7 max-w-lg">
+                    From dedicated office floors to retail and showroom
+                    spaces, Altezza One brings multiple commercial
+                    opportunities into one development.
+                </p>
+
+                <div class="mt-9 space-y-5">
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-check-circle text-[#E7A5BE] mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">G+12 Commercial Tower</p>
+                            <p class="text-white/50 text-sm mt-1">Office spaces from 4th to 12th floor.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-check-circle text-[#E7A5BE] mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">G+3 Retail & Showrooms</p>
+                            <p class="text-white/50 text-sm mt-1">Retail spaces across four levels.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-check-circle text-[#E7A5BE] mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">4 + 1 Layer Basement Parking</p>
+                            <p class="text-white/50 text-sm mt-1">Basement parking provision.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-check-circle text-[#E7A5BE] mt-1"></i>
+                        <div>
+                            <p class="text-white font-medium">Visitor Parking</p>
+                            <p class="text-white/50 text-sm mt-1">Sufficient allotted visitor parking, as specified.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Specifications panel -->
+            <div class="bg-white/5 border border-white/15 p-7 md:p-10" data-aos="fade-left">
+
+                <p class="text-[#E7A5BE] text-xs tracking-[.25em] uppercase mb-8">
+                    Project Specifications
+                </p>
+
+                <div class="detail-row py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Commercial Building</span>
+                    <span class="text-white font-medium text-right">G+12</span>
+                </div>
+
+                <div class="detail-row py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Retail & Showrooms</span>
+                    <span class="text-white font-medium text-right">G+3</span>
+                </div>
+
+                <div class="detail-row py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Office Floors</span>
+                    <span class="text-white font-medium text-right">4th–12th</span>
+                </div>
+
+                <div class="detail-row py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Basement Parking</span>
+                    <span class="text-white font-medium text-right">4 + 1 Layers</span>
+                </div>
+
+                <div class="detail-row py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Office Ceiling Height</span>
+                    <span class="text-white font-medium text-right">10 ft Clear</span>
+                </div>
+
+                <div class="py-6 flex justify-between gap-5">
+                    <span class="text-white/65 text-sm">Plan Approval</span>
+                    <span class="text-[#E7A5BE] font-medium text-right">AMC Approved</span>
+                </div>
+
+                <a href="#contact"
+                   class="pink-button block text-center py-4 mt-4 text-xs uppercase tracking-widest font-semibold">
+                    Get Project Information
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= LOCATION ================= -->
+<section class="py-20 md:py-28 bg-[#FCF9F7]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+            <div data-aos="fade-right">
+
+                <p class="section-label mb-5">Project Location</p>
+
+                <h2 class="text-3xl md:text-5xl text-[#172D4B] leading-tight">
+                    A Location with
+                    <span class="block text-[#9F206B]">Visibility.</span>
+                </h2>
+
+                <p class="text-[#788397] leading-8 mt-7">
+                    Altezza One is located in Science Park,
+                    S P Ring Road, in growing West Ahmedabad.
+                </p>
+
+                <div class="mt-8 p-6 bg-[#F6E9F0] border-l-4 border-[#9F206B]">
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-location-dot text-[#9F206B] text-xl mt-1"></i>
+                        <div>
+                            <p class="text-[#172D4B] font-semibold">
+                                Science Park, S P Ring Road
+                            </p>
+                            <p class="text-[#788397] text-sm mt-2 leading-6">
+                                West Ahmedabad
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-7 space-y-4">
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-check-circle text-[#9F206B]"></i>
+                        <span class="text-sm text-[#52647B]">2 Road Corner Project</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-check-circle text-[#9F206B]"></i>
+                        <span class="text-sm text-[#52647B]">Garden Lake View Project</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-check-circle text-[#9F206B]"></i>
+                        <span class="text-sm text-[#52647B]">High visibility location with footfall potential</span>
+                    </div>
+
+                </div>
+
+                <a href="https://goo.gl/maps/ywEX3CbbUo3deUw29?g_st=aw"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="pink-button inline-flex items-center gap-3 px-7 py-4 mt-9 text-xs uppercase tracking-widest">
+                    View Location
+                    <i class="fas fa-location-arrow"></i>
+                </a>
+
+            </div>
+
+            <div class="relative" data-aos="fade-left">
+
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_Park.jpeg"
+                    alt="Original TSG project photograph"
+                    class="w-full h-[360px] md:h-[480px] object-cover"
+                >
+
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#172D4B]/90 to-transparent p-7">
+                    <p class="text-[#E7A5BE] text-xs tracking-[.25em] uppercase">
+                        Project Address
+                    </p>
+                    <p class="text-white text-xl mt-2 serif">
+                        Science Park, S P Ring Road
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= WHO CAN EXPLORE ================= -->
+<section class="py-20 md:py-24 bg-[#F6E9F0]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="text-center mb-14" data-aos="fade-up">
+
+            <p class="section-label mb-4">Commercial Opportunities</p>
+
+            <h2 class="text-3xl md:text-5xl text-[#172D4B]">
+                A Space for Every
+                <span class="text-[#9F206B]">Ambition.</span>
+            </h2>
+
+            <p class="text-[#788397] max-w-2xl mx-auto mt-5 leading-7">
+                Altezza One is presented for a range of businesses
+                and commercial requirements.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-store text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">Brands</p>
+            </div>
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-utensils text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">Restaurants</p>
+            </div>
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-user-doctor text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">Doctors</p>
+            </div>
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-briefcase text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">Business Owners</p>
+            </div>
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-chart-line text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">Smart Investors</p>
+            </div>
+
+            <div class="bg-white p-6 text-center border border-[#ead5e0]">
+                <i class="fas fa-laptop-code text-2xl text-[#9F206B]"></i>
+                <p class="text-[#172D4B] text-sm mt-4 font-medium">IT & Startups</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="py-20 md:py-28 bg-[#FCF9F7]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12" data-aos="fade-up">
+
+            <div>
+                <p class="section-label mb-4">Project Visuals</p>
+
+                <h2 class="text-3xl md:text-5xl text-[#172D4B]">
+                    Discover <span class="text-[#9F206B]">Altezza One.</span>
+                </h2>
+            </div>
+
+            <p class="text-[#788397] text-sm leading-7 max-w-md">
+                Explore the original project photographs shared
+                by TSG Real Estate.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <div class="gallery-item md:col-span-2 h-[280px] md:h-[420px]" data-aos="fade-up">
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building.jpeg"
+                    alt="Original TSG building photograph"
+                    class="gallery-img w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="gallery-item h-[280px] md:h-[420px]" data-aos="fade-up" data-aos-delay="100">
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_building2.jpeg"
+                    alt="Original TSG property photograph"
+                    class="gallery-img w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="gallery-item h-[250px]" data-aos="fade-up">
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_Park.jpeg"
+                    alt="Original TSG park photograph"
+                    class="gallery-img w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="gallery-item md:col-span-2 h-[250px]" data-aos="fade-up" data-aos-delay="100">
+                <img
+                    src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/TSG_5.jpeg"
+                    alt="Original TSG project photograph"
+                    class="gallery-img w-full h-full object-cover"
+                >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PRE-LAUNCH CTA ================= -->
+<section class="py-20 md:py-24 bg-[#9F206B] relative overflow-hidden">
+
+    <div class="absolute -top-36 -right-20 w-96 h-96 rounded-full border border-white/15"></div>
+    <div class="absolute -bottom-40 -left-20 w-96 h-96 rounded-full border border-white/15"></div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+
+        <p class="text-white/75 text-xs tracking-[.3em] uppercase mb-5">
+            Limited Pre-Launch Inventory
+        </p>
+
+        <h2 class="text-3xl md:text-5xl text-white leading-tight">
+            Be Part of
+            <span class="block">Altezza One.</span>
+        </h2>
+
+        <p class="text-white/80 mt-6 leading-7 max-w-2xl mx-auto">
+            Explore the pre-launch opportunity before the official reveal.
+            Connect with the team to request current availability and details.
+        </p>
+
+        <a href="#contact"
+           class="inline-flex items-center gap-3 bg-[#172D4B] text-white px-9 py-4 mt-9 text-xs uppercase tracking-widest hover:bg-[#315C87] transition">
+            Enquire Before The Reveal
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <p class="text-white/70 text-xs mt-7">
+            Pre-launch prices and inventory are subject to change.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="py-20 md:py-28 bg-[#EAF1F8]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20">
+
+            <div data-aos="fade-right">
+
+                <p class="section-label mb-5">Connect With Us</p>
+
+                <h2 class="text-3xl md:text-5xl text-[#172D4B] leading-tight">
+                    Your Business.
+                    <span class="block text-[#9F206B]">Your Next Address.</span>
+                </h2>
+
+                <p class="text-[#788397] leading-8 mt-7 max-w-lg">
+                    Interested in office or retail spaces at Altezza One?
+                    Contact the team to request more project information
+                    and enquire about pre-launch availability.
+                </p>
+
+                <div class="mt-10 space-y-7">
+
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#F6E9F0] text-[#9F206B]">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-[#9F206B] uppercase tracking-widest">Call For Enquiries</p>
+                            <a href="tel:+919090040423" class="block mt-2 text-[#172D4B] text-lg">
+                                +91 90900 40423
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#F6E9F0] text-[#9F206B]">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-[#9F206B] uppercase tracking-widest">Project Location</p>
+                            <p class="mt-2 text-[#172D4B] leading-7">
+                                Science Park, S P Ring Road,
+                                West Ahmedabad.
+                            </p>
+
+                            <a href="https://goo.gl/maps/ywEX3CbbUo3deUw29?g_st=aw"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="inline-block mt-2 text-xs text-[#9F206B] uppercase tracking-wider">
+                                View on Google Maps
+                                <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#F6E9F0] text-[#9F206B]">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-[#9F206B] uppercase tracking-widest">Project By</p>
+                            <p class="mt-2 text-[#172D4B]">Altezza Group</p>
+                            <p class="text-sm text-[#788397] mt-1">Altezza One</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMERCIAL ENQUIRY FORM -->
+            <div class="bg-white p-7 md:p-10 border border-[#D9E2ED] shadow-sm" data-aos="fade-left">
+
+                <p class="section-label mb-3">Commercial Enquiry</p>
+
+                <h3 class="text-2xl md:text-3xl text-[#172D4B] mb-8">
+                    Request Project Details
+                </h3>
+
+                <form id="enquiryForm" class="space-y-5">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Full Name"
+                        class="form-input"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Your Phone Number"
+                        class="form-input"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email Address"
+                        class="form-input"
+                    >
+
+                    <select id="interest" class="form-input" required>
+                        <option value="">Interested In</option>
+                        <option value="Office Space">Office Space</option>
+                        <option value="Retail Space">Retail Space</option>
+                        <option value="Showroom">Showroom</option>
+                        <option value="Investment Enquiry">Investment Enquiry</option>
+                        <option value="General Project Information">General Project Information</option>
+                    </select>
+
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Tell us more about your requirement..."
+                        class="form-input resize-none"
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="pink-button w-full py-4 text-xs uppercase tracking-[.2em] font-semibold"
+                    >
+                        Submit Enquiry
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+
+                    <p class="text-xs text-center text-[#9299A4]">
+                        Your enquiry will open directly in WhatsApp.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#172D4B] pt-16 pb-8 border-t border-[#E7A5BE]/20 relative overflow-hidden">
+    
+    <!-- Subtle Premium Background Glow -->
+    <div class="absolute bottom-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#E7A5BE] rounded-full blur-[150px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+            <!-- Brand Column -->
+            <div data-aos="fade-up">
+                <a href="index.html" class="inline-block mb-5">
+                    <img
+                        src="https://ik.imagekit.io/iuiy6mihw/TSG_RealEstate/ALtezza%20One%20logo%20(1).png"
+                        alt="Altezza One Commercial Logo"
+                        class="h-16 w-auto object-contain"
+                    >
+                </a>
+
+                <p class="text-white/60 text-sm leading-7 max-w-xs font-light">
+                    TSG Real Estate Consulting brings premium residential and commercial property opportunities together. 
+                </p>
+                
+                <!-- Premium Trust Badge -->
+                <div class="mt-6 inline-block border border-[#E7A5BE]/30 px-4 py-2">
+                    <p class="text-[#E7A5BE] text-[10px] uppercase tracking-[.2em] font-semibold">
+                        Trust • Secure • Genuine
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h4 class="text-[#E7A5BE] text-xs tracking-[.2em] uppercase mb-6 font-semibold">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-3 text-sm text-white/60 font-light">
+                    <li>
+                        <a href="index.html" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#overview" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#spaces" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                            Office & Retail Spaces
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                            Specifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center gap-2">
+                            <span class="w-1 h-1 bg-white/50 rounded-full"></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Our Projects Column -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h4 class="text-[#E7A5BE] text-xs tracking-[.2em] uppercase mb-6 font-semibold">
+                    Our Projects
+                </h4>
+
+                <ul class="space-y-3 text-sm text-white/60 font-light">
+                    <li>
+                        <a href="residential.html" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center justify-between group">
+                            <span>Status Altezza</span>
+                            <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-all transform -translate-x-2 group-hover:translate-x-0 text-[#E7A5BE]"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="commercial.html" class="hover:text-[#E7A5BE] transition-colors duration-300 flex items-center justify-between group">
+                            <span>Altezza One</span>
+                            <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-all transform -translate-x-2 group-hover:translate-x-0 text-[#E7A5BE]"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Project Location Badge -->
+                <div class="mt-6 border-l-2 border-[#E7A5BE]/50 pl-3">
+                    <p class="text-[10px] text-white/40 uppercase tracking-widest mb-1">Location</p>
+                    <p class="text-white/70 text-xs">Science Park, S.P. Ring Road</p>
+                </div>
+            </div>
+
+            <!-- Commercial Enquiries Column -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h4 class="text-[#E7A5BE] text-xs tracking-[.2em] uppercase mb-6 font-semibold">
+                    Commercial Enquiries
+                </h4>
+
+                <ul class="space-y-4 text-sm text-white/60 font-light">
+                    <li>
+                        <a href="tel:+919090040423" class="flex items-center gap-3 hover:text-[#E7A5BE] transition-colors group">
+                            <div class="w-8 h-8 rounded-full border border-[#E7A5BE]/30 flex items-center justify-center group-hover:border-[#E7A5BE] transition-colors">
+                                <i class="fa-solid fa-phone text-[10px] text-[#E7A5BE]"></i>
+                            </div>
+                            <span>+91 90900 40423</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+919638604688" class="flex items-center gap-3 hover:text-[#E7A5BE] transition-colors group">
+                            <div class="w-8 h-8 rounded-full border border-[#E7A5BE]/30 flex items-center justify-center group-hover:border-[#E7A5BE] transition-colors">
+                                <i class="fa-solid fa-phone text-[10px] text-[#E7A5BE]"></i>
+                            </div>
+                            <span>+91 96386 04688</span>
+                        </a>
+                    </li>
+                    <li class="flex items-start gap-3 pt-2">
+                        <i class="fa-solid fa-location-dot text-[#E7A5BE] mt-1"></i>
+                        <span class="text-xs leading-relaxed">Science Park, S P Ring Road, West Ahmedabad</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-building text-[#E7A5BE]"></i>
+                        <span class="text-xs uppercase tracking-widest">Project By Altezza Group</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+            <p>&copy; 2026 TSG Real Estate Consulting. All Rights Reserved.</p>
+            
+            <!-- Altezza One Branded Tag -->
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#E7A5BE]"></span>
+                <p class="uppercase tracking-widest text-[10px]">Altezza One | Commercial Project</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+<a href="https://wa.me/919090040423?text=Hello%2C%20I%20am%20interested%20in%20Altezza%20One%20commercial%20project."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="WhatsApp Altezza One"
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button id="backToTop"
+        aria-label="Back to top"
+        class="fixed bottom-24 right-7 z-40 w-11 h-11 bg-[#9F206B] text-white hidden items-center justify-center shadow-lg hover:bg-[#79164F] transition">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+
+    AOS.init({
+        duration: 900,
+        once: true,
+        offset: 70
+    });
+
+    // Mobile Navigation
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add('hidden');
+
+        const icon = menuBtn.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+
+    menuBtn.addEventListener('click', () => {
+
+        mobileMenu.classList.toggle('hidden');
+
+        const icon = menuBtn.querySelector('i');
+
+        if (mobileMenu.classList.contains('hidden')) {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        } else {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        }
+
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    window.addEventListener('scroll', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+            closeMobileMenu();
+        }
+    });
+
+    // Back to Top
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+
+        if (window.scrollY > 400) {
+            backToTop.classList.remove('hidden');
+            backToTop.classList.add('flex');
+        } else {
+            backToTop.classList.add('hidden');
+            backToTop.classList.remove('flex');
+        }
+
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Commercial Enquiry Form
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const interest = document.getElementById('interest').value;
+        const message = document.getElementById('message').value.trim();
+
+        const whatsappMessage =
+            `Hello, I am interested in Altezza One commercial project.%0A%0A` +
+            `Name: ${encodeURIComponent(name)}%0A` +
+            `Phone: ${encodeURIComponent(phone)}%0A` +
+            `Email: ${encodeURIComponent(email || 'Not provided')}%0A` +
+            `Interested In: ${encodeURIComponent(interest)}%0A` +
+            `Message: ${encodeURIComponent(message || 'No additional message')}`;
+
+        window.open(
+            `https://wa.me/919090040423?text=${whatsappMessage}`,
+            '_blank'
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
